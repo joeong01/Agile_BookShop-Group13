@@ -78,7 +78,7 @@
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href={{ route('about') }}>About</a></li>
             </ul>
             <p class="copyright">Book Booking System © 2022</p>
         </footer>

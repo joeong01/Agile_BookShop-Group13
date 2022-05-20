@@ -3,10 +3,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <style>
     .footer-basic {
-        position: fixed;
+        position: absolute;
         width: 100%;
         bottom: 0;
-        margin-top: 60px;
         padding:40px 0;
         background-color: rgb(190, 245, 190);
         color:#4b4c4d;

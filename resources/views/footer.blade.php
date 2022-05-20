@@ -8,8 +8,8 @@
         bottom: 0;
         margin-top: 60px;
         padding:40px 0;
-        background-color: rgb(190, 245, 190);
-        color:#4b4c4d;
+        background-color: rgb(44, 47, 44);
+        color:#9d9d9d;
     }
 
     .footer-basic ul {
@@ -62,7 +62,7 @@
         margin-top:15px;
         text-align:center;
         font-size:15px;
-        color: #4b4c4d;
+        color: #9d9d9d;
         margin-bottom:0;
     }
     </style>    

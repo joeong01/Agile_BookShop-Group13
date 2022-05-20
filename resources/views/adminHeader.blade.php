@@ -1,5 +1,5 @@
 <head>
-    <style>
+  <style>
     /*
     =====
     DEPENDENCES
@@ -51,7 +51,7 @@
     */
     
     .menu:hover .menu__link:not(:hover){
-      --rLinkColor: var(--menuLinkColorUnactive, rgba(3, 2, 2, 0.35));
+      --rLinkColor: var(--menuLinkColorUnactive, rgb(226, 226, 226));
     }
   
     /*
@@ -126,9 +126,9 @@
     */
     
     .page__custom-settings{
-      --menuBackgroundColor: rgb(190, 245, 190);
+      --menuBackgroundColor: rgb(44, 47, 44);
       --menuLinkColor: rgb(93, 117, 253);
-      --menuLinkColorUnactive: #000000;
+      --menuLinkColorUnactive: rgb(226, 226, 226);
       --menuLinkOutlineOffset: -.5rem; 
     }
     

@@ -73,11 +73,11 @@
         <div class="content">
             <p>Maecenas rhoncus odio non velit efficitur cursus. Nulla tristique arcu et diam mollis, ac pulvinar augue tempor. Phasellus quis metus nec nunc condimentum viverra id ut tellus. Mauris sagittis faucibus posuere. Curabitur ultricies leo quis nunc varius dapibus. Vivamus pulvinar placerat cursus. Phasellus eu congue lorem. Sed pretium eget eros et ornare. Sed mauris velit, vestibulum ac nibh et, vehicula luctus purus. Proin maximus faucibus turpis ut molestie.</p>
         </div>
-        <button type="button" class="collapsible">Open Collapsible</button>
+        <button type="button" class="collapsible">Shipping</button>
         <div class="content">
             <p>Ut magna felis, tincidunt non augue nec, mollis ultrices tellus. Fusce turpis nunc, feugiat vitae lacus et, aliquet sollicitudin risus. Proin luctus nunc orci, at ultrices lectus rhoncus et. Praesent accumsan mauris aliquam eros dictum, vel auctor dui volutpat. Nam elementum in risus quis ullamcorper. Aenean sodales est est, ac elementum diam aliquam quis. Nullam sodales, augue in faucibus pulvinar, ex dui rutrum est, quis vehicula sem mi id felis. Sed laoreet augue eu nisi mollis facilisis. Praesent eget risus nec dui congue facilisis. Aliquam a orci sodales, sagittis quam eu, sodales libero. Integer mattis hendrerit nibh, quis maximus lectus aliquam sed. Pellentesque vel malesuada sem.</p>
         </div>
-        <button type="button" class="collapsible">Open Collapsible</button>
+        <button type="button" class="collapsible">Cookies</button>
         <div class="content">
             <p>Maecenas non libero nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean faucibus erat eu lectus consequat malesuada. Curabitur aliquam nisl id nunc tempor tristique. Etiam ut arcu consequat, sodales ante a, suscipit orci. Pellentesque et dui nisi. Nam vestibulum ligula placerat metus viverra venenatis faucibus ac ex. Cras eget enim in diam consequat posuere. Nullam convallis commodo mi eu vestibulum. Mauris sagittis facilisis nisi. Cras ultrices ex at neque mattis vehicula. Curabitur sit amet ligula dolor. Donec eleifend sapien sed dolor blandit consectetur. Nam suscipit non ipsum in feugiat.</p>
         </div>

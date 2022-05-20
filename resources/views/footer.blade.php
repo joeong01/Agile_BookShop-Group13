@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <style>
     .footer-basic {
-        position: fixed;
+        position: absolute;
         width: 100%;
         bottom: 0;
         margin-top: 60px;

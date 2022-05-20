@@ -3,10 +3,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <style>
     .footer-basic {
-        position: fixed;
+        position: absolute;
         width: 100%;
         bottom: 0;
-        margin-top: 60px;
         padding:40px 0;
         background-color: rgb(44, 47, 44);
         color:#9d9d9d;
@@ -78,7 +77,7 @@
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href={{ route('about') }}>About</a></li>
             </ul>
             <p class="copyright">Book Booking System © 2022</p>
         </footer>

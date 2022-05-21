@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,5 @@ Route::get('stock',function(){
 });
 
 Route::get('about', AboutController::class)->name('about');
+
+Route::get('contactUs', ContactController::class)->name('contact_us');

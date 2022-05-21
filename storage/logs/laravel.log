@@ -3,7 +3,8 @@
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths('homepage', Array)
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Factory.php(138): Illuminate\\View\\FileViewFinder->find('homepage')
 #2 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(932): Illuminate\\View\\Factory->make('homepage', Array, Array)
-#3 D:\\WebDesign\\htdocs\\BookBookingSystem\outes\\web.php(17): view('homepage')
+#3 D:\\WebDesign\\htdocs\\BookBookingSystem\
+outes\\web.php(17): view('homepage')
 #4 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(238): Illuminate\\Routing\\RouteFileRegistrar->{closure}()
 #5 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(208): Illuminate\\Routing\\Route->runCallable()
 #6 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(721): Illuminate\\Routing\\Route->run()
@@ -49,11 +50,14 @@
 #46 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #47 {main}
 "} 
-[2022-05-10 13:29:59] local.ERROR: syntax error, unexpected '(' (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\userHomepage.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/userHomepage.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1403031677 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-05-10 13:29:59] local.ERROR: syntax error, unexpected '(' (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\userHomepage.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/userHomepage.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-1403031677 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-1403031677\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '(' (View: D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views\\userHomepage.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/userHomepage.blade.php:9)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '(' (View: D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views\\userHomepage.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/userHomepage.blade.php:9)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -165,11 +169,14 @@
 #51 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #52 {main}
 "} 
-[2022-05-10 13:29:59] local.ERROR: syntax error, unexpected '(' (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\userHomepage.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/userHomepage.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-103711701 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-05-10 13:29:59] local.ERROR: syntax error, unexpected '(' (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\userHomepage.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/userHomepage.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-103711701 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-103711701\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '(' (View: D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views\\userHomepage.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/userHomepage.blade.php:9)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '(' (View: D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views\\userHomepage.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/userHomepage.blade.php:9)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -281,10 +288,12 @@
 #51 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #52 {main}
 "} 
-[2022-05-10 13:32:18] local.ERROR: The Mix manifest does not exist. (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\userHomepage.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Mix.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): The Mix manifest does not exist. (View: D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views\\userHomepage.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Mix.php:52)
+[2022-05-10 13:32:18] local.ERROR: The Mix manifest does not exist. (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\userHomepage.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Mix.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): The Mix manifest does not exist. (View: D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views\\userHomepage.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Mix.php:52)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(537): Illuminate\\Foundation\\Mix->__invoke('/css/userhoem.c...')
-#1 D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/userHomepage.blade.php(9): mix('css/userhoem.cs...')
+#1 D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/userHomepage.blade.php(9): mix('css/userhoem.cs...')
 #2 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\WebDesign\\\\ht...')
 #3 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -399,11 +408,14 @@
 #54 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #55 {main}
 "} 
-[2022-05-10 13:34:14] local.ERROR: syntax error, unexpected '(' (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\userHomepage.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/userHomepage.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-619750769 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-05-10 13:34:14] local.ERROR: syntax error, unexpected '(' (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\userHomepage.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/userHomepage.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-619750769 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-619750769\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '(' (View: D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views\\userHomepage.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/userHomepage.blade.php:9)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected '(' (View: D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views\\userHomepage.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/userHomepage.blade.php:9)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -515,10 +527,12 @@
 #51 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #52 {main}
 "} 
-[2022-05-10 14:37:55] local.ERROR: Route [adminHomepage] not defined. (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [adminHomepage] not defined. (View: D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:444)
+[2022-05-10 14:37:55] local.ERROR: Route [adminHomepage] not defined. (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [adminHomepage] not defined. (View: D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:444)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(739): Illuminate\\Routing\\UrlGenerator->route('adminHomepage', Array, true)
-#1 D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHeader.blade.php(200): route('adminHomepage')
+#1 D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHeader.blade.php(200): route('adminHomepage')
 #2 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\WebDesign\\\\ht...')
 #3 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -529,7 +543,8 @@
 #9 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #10 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(428): Illuminate\\View\\View->render()
 #11 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(115): Illuminate\\View\\View->toHtml()
-#12 D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
+#12 D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
 #13 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\WebDesign\\\\ht...')
 #14 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #15 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -655,10 +670,12 @@
 #65 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #66 {main}
 "} 
-[2022-05-10 14:38:25] local.ERROR: Route [adminHomepage] not defined. (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [adminHomepage] not defined. (View: D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:444)
+[2022-05-10 14:38:25] local.ERROR: Route [adminHomepage] not defined. (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [adminHomepage] not defined. (View: D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:444)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(739): Illuminate\\Routing\\UrlGenerator->route('adminHomepage', Array, true)
-#1 D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHeader.blade.php(200): route('adminHomepage')
+#1 D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHeader.blade.php(200): route('adminHomepage')
 #2 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\WebDesign\\\\ht...')
 #3 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -669,7 +686,8 @@
 #9 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #10 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(428): Illuminate\\View\\View->render()
 #11 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(115): Illuminate\\View\\View->toHtml()
-#12 D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
+#12 D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
 #13 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\WebDesign\\\\ht...')
 #14 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #15 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -795,10 +813,12 @@
 #65 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #66 {main}
 "} 
-[2022-05-10 14:45:58] local.ERROR: Route [adminHomepage] not defined. (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [adminHomepage] not defined. (View: D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:444)
+[2022-05-10 14:45:58] local.ERROR: Route [adminHomepage] not defined. (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php","data":[]},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [adminHomepage] not defined. (View: D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:444)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(739): Illuminate\\Routing\\UrlGenerator->route('adminHomepage', Array, true)
-#1 D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHeader.blade.php(201): route('adminHomepage')
+#1 D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHeader.blade.php(201): route('adminHomepage')
 #2 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\WebDesign\\\\ht...')
 #3 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -809,7 +829,8 @@
 #9 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #10 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(428): Illuminate\\View\\View->render()
 #11 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(115): Illuminate\\View\\View->toHtml()
-#12 D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
+#12 D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
 #13 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\WebDesign\\\\ht...')
 #14 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #15 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -935,11 +956,14 @@
 #65 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #66 {main}
 "} 
-[2022-05-10 14:53:49] local.ERROR: syntax error, unexpected ''adminHomepage.blade.php); ?>"' (T_ENCAPSED_AND_WHITESPACE) (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHeader.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-85405177 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-05-10 14:53:49] local.ERROR: syntax error, unexpected ''adminHomepage.blade.php); ?>"' (T_ENCAPSED_AND_WHITESPACE) (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHeader.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-85405177 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-85405177\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected ''adminHomepage.blade.php); ?>\"' (T_ENCAPSED_AND_WHITESPACE) (View: D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHeader.blade.php:200)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected ''adminHomepage.blade.php); ?>\"' (T_ENCAPSED_AND_WHITESPACE) (View: D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHeader.blade.php:200)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -950,7 +974,8 @@
 #6 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #7 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(428): Illuminate\\View\\View->render()
 #8 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(115): Illuminate\\View\\View->toHtml()
-#9 D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
+#9 D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
 #10 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\WebDesign\\\\ht...')
 #11 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #12 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -1073,11 +1098,14 @@
 #62 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #63 {main}
 "} 
-[2022-05-10 14:54:07] local.ERROR: syntax error, unexpected ';', expecting ')' (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHeader.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-51117371 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
+[2022-05-10 14:54:07] local.ERROR: syntax error, unexpected ';', expecting ')' (View: D:\WebDesign\htdocs\BookBookingSystem\resources\views\adminHeader.blade.php) {"view":{"view":"D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHeader.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-51117371 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#276</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
 </pre><script>Sfdump(\"sf-dump-51117371\", {\"maxDepth\":3,\"maxStringLength\":160})</script>
-"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected ';', expecting ')' (View: D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHeader.blade.php:200)
+"}},"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): syntax error, unexpected ';', expecting ')' (View: D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views\\adminHeader.blade.php) at D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHeader.blade.php:200)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -1088,7 +1116,8 @@
 #6 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #7 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(428): Illuminate\\View\\View->render()
 #8 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\helpers.php(115): Illuminate\\View\\View->toHtml()
-#9 D:\\WebDesign\\htdocs\\BookBookingSystem\esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
+#9 D:\\WebDesign\\htdocs\\BookBookingSystem\
+esources\\views/adminHomepage.blade.php(13): e(Object(Illuminate\\View\\View))
 #10 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('D:\\\\WebDesign\\\\ht...')
 #11 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #12 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('D:\\\\WebDesign\\\\ht...', Array)
@@ -1211,7 +1240,8 @@
 #62 D:\\WebDesign\\htdocs\\BookBookingSystem\\server.php(21): require_once('D:\\\\WebDesign\\\\ht...')
 #63 {main}
 "} 
-[2022-05-11 07:24:33] local.ERROR: syntax error, unexpected '}', expecting end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '}', expecting end of file at D:\\WebDesign\\htdocs\\BookBookingSystem\outes\\web.php:17)
+[2022-05-11 07:24:33] local.ERROR: syntax error, unexpected '}', expecting end of file {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '}', expecting end of file at D:\\WebDesign\\htdocs\\BookBookingSystem\
+outes\\web.php:17)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\WebDesign\\\\ht...')
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('D:\\\\WebDesign\\\\ht...')
@@ -1241,7 +1271,8 @@
 #25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #26 {main}
 "} 
-[2022-05-11 07:24:58] local.ERROR: syntax error, unexpected ')', expecting '{' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ')', expecting '{' at D:\\WebDesign\\htdocs\\BookBookingSystem\outes\\web.php:20)
+[2022-05-11 07:24:58] local.ERROR: syntax error, unexpected ')', expecting '{' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected ')', expecting '{' at D:\\WebDesign\\htdocs\\BookBookingSystem\
+outes\\web.php:20)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\WebDesign\\\\ht...')
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('D:\\\\WebDesign\\\\ht...')
@@ -1271,7 +1302,8 @@
 #25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #26 {main}
 "} 
-[2022-05-11 07:25:08] local.ERROR: syntax error, unexpected '}', expecting ';' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '}', expecting ';' at D:\\WebDesign\\htdocs\\BookBookingSystem\outes\\web.php:22)
+[2022-05-11 07:25:08] local.ERROR: syntax error, unexpected '}', expecting ';' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '}', expecting ';' at D:\\WebDesign\\htdocs\\BookBookingSystem\
+outes\\web.php:22)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\WebDesign\\\\ht...')
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('D:\\\\WebDesign\\\\ht...')
@@ -1301,7 +1333,8 @@
 #25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #26 {main}
 "} 
-[2022-05-11 07:25:12] local.ERROR: syntax error, unexpected '}', expecting ';' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '}', expecting ';' at D:\\WebDesign\\htdocs\\BookBookingSystem\outes\\web.php:22)
+[2022-05-11 07:25:12] local.ERROR: syntax error, unexpected '}', expecting ';' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '}', expecting ';' at D:\\WebDesign\\htdocs\\BookBookingSystem\
+outes\\web.php:22)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\WebDesign\\\\ht...')
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('D:\\\\WebDesign\\\\ht...')
@@ -1331,7 +1364,8 @@
 #25 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #26 {main}
 "} 
-[2022-05-11 07:25:12] local.ERROR: syntax error, unexpected '}', expecting ';' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '}', expecting ';' at D:\\WebDesign\\htdocs\\BookBookingSystem\outes\\web.php:22)
+[2022-05-11 07:25:12] local.ERROR: syntax error, unexpected '}', expecting ';' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '}', expecting ';' at D:\\WebDesign\\htdocs\\BookBookingSystem\
+outes\\web.php:22)
 [stacktrace]
 #0 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('D:\\\\WebDesign\\\\ht...')
 #1 D:\\WebDesign\\htdocs\\BookBookingSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('D:\\\\WebDesign\\\\ht...')
@@ -1371,7 +1405,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1411,7 +1446,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1453,7 +1489,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1495,7 +1532,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1535,7 +1573,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1575,7 +1614,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1615,7 +1655,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1655,7 +1696,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1697,7 +1739,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1739,7 +1782,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1781,7 +1825,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1823,7 +1868,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1863,7 +1909,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1903,7 +1950,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1943,7 +1991,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -1985,7 +2034,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2027,7 +2077,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2067,7 +2118,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2109,7 +2161,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2151,7 +2204,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2191,7 +2245,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2231,7 +2286,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2271,7 +2327,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2311,7 +2368,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2351,7 +2409,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2391,7 +2450,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2433,7 +2493,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2475,7 +2536,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2515,7 +2577,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2555,7 +2618,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2597,7 +2661,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2639,7 +2704,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2681,7 +2747,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2723,7 +2790,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2763,7 +2831,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2803,7 +2872,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2843,7 +2913,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2883,7 +2954,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2923,7 +2995,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -2963,7 +3036,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -3003,7 +3077,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -3043,7 +3118,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -3083,7 +3159,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -3123,7 +3200,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -3163,7 +3241,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -3203,7 +3282,8 @@
 #5 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'about', Array)
 #6 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'about', 'AboutController')
 #7 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('about', 'AboutController')
-#8 C:\\Github Respo\\Agile_BookShop-Group13\outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\Github Respo\\Agile_BookShop-Group13\
+outes\\web.php(24): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\Github Respo...')
 #10 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\Github Respo...')
 #11 C:\\Github Respo\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\Github Respo...')
@@ -3243,7 +3323,169 @@
 #5 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, 'contactUs', Array)
 #6 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, 'contactUs', 'App\\\\Http\\\\Contro...')
 #7 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('contactUs', 'App\\\\Http\\\\Contro...')
-#8 C:\\xampp\\htdocs\\Agile_BookShop-Group13\outes\\web.php(28): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#8 C:\\xampp\\htdocs\\Agile_BookShop-Group13\
+outes\\web.php(28): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\xampp\\\\htdocs...')
+#10 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
+#11 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
+#12 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'C:\\\\xampp\\\\htdocs...')
+#13 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\app\\Providers\\RouteServiceProvider.php(48): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\xampp\\\\htdocs...')
+#14 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(927): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(905): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 24)
+#30 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(906): array_walk(Array, Object(Closure))
+#31 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#35 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-05-21 16:32:50] local.ERROR: Invalid route action: [AdminHomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [AdminHomeController]. at C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('AdminHomeContro...')
+#1 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(191): Illuminate\\Routing\\RouteAction::parse('admin', Array)
+#2 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(172): Illuminate\\Routing\\Route->parseAction(Array)
+#3 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(583): Illuminate\\Routing\\Route->__construct(Array, 'admin', Array)
+#4 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(476): Illuminate\\Routing\\Router->newRoute(Array, 'admin', Array)
+#5 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, '/admin', Array)
+#6 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, '/admin', 'AdminHomeContro...')
+#7 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('/admin', 'AdminHomeContro...')
+#8 C:\\xampp\\htdocs\\Agile_BookShop-Group13\
+outes\\web.php(18): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\xampp\\\\htdocs...')
+#10 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
+#11 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
+#12 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'C:\\\\xampp\\\\htdocs...')
+#13 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\app\\Providers\\RouteServiceProvider.php(48): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\xampp\\\\htdocs...')
+#14 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(927): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(905): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 24)
+#30 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(906): array_walk(Array, Object(Closure))
+#31 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#35 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-05-21 16:33:12] local.ERROR: Invalid route action: [AdminHomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [AdminHomeController]. at C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('AdminHomeContro...')
+#1 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(191): Illuminate\\Routing\\RouteAction::parse('admin', Array)
+#2 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(172): Illuminate\\Routing\\Route->parseAction(Array)
+#3 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(583): Illuminate\\Routing\\Route->__construct(Array, 'admin', Array)
+#4 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(476): Illuminate\\Routing\\Router->newRoute(Array, 'admin', Array)
+#5 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, '/admin', Array)
+#6 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, '/admin', 'AdminHomeContro...')
+#7 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('/admin', 'AdminHomeContro...')
+#8 C:\\xampp\\htdocs\\Agile_BookShop-Group13\outes\\web.php(18): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\xampp\\\\htdocs...')
+#10 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
+#11 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
+#12 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'C:\\\\xampp\\\\htdocs...')
+#13 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\app\\Providers\\RouteServiceProvider.php(48): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\xampp\\\\htdocs...')
+#14 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(927): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(905): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 24)
+#30 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(906): array_walk(Array, Object(Closure))
+#31 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#35 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-05-21 16:33:13] local.ERROR: Invalid route action: [AdminHomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [AdminHomeController]. at C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('AdminHomeContro...')
+#1 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(191): Illuminate\\Routing\\RouteAction::parse('admin', Array)
+#2 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(172): Illuminate\\Routing\\Route->parseAction(Array)
+#3 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(583): Illuminate\\Routing\\Route->__construct(Array, 'admin', Array)
+#4 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(476): Illuminate\\Routing\\Router->newRoute(Array, 'admin', Array)
+#5 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, '/admin', Array)
+#6 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, '/admin', 'AdminHomeContro...')
+#7 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('/admin', 'AdminHomeContro...')
+#8 C:\\xampp\\htdocs\\Agile_BookShop-Group13\outes\\web.php(18): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#9 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\xampp\\\\htdocs...')
+#10 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
+#11 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')
+#12 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteRegistrar.php(163): Illuminate\\Routing\\Router->group(Array, 'C:\\\\xampp\\\\htdocs...')
+#13 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\app\\Providers\\RouteServiceProvider.php(48): Illuminate\\Routing\\RouteRegistrar->group('C:\\\\xampp\\\\htdocs...')
+#14 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): App\\Providers\\RouteServiceProvider->App\\Providers\\{closure}()
+#15 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#17 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#18 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#19 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(120): Illuminate\\Container\\Container->call(Object(Closure))
+#20 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider.php(45): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#21 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->Illuminate\\Foundation\\Support\\Providers\\{closure}()
+#22 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#25 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(653): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#26 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\ServiceProvider.php(119): Illuminate\\Container\\Container->call(Object(Closure))
+#27 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(927): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#28 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(905): Illuminate\\Foundation\\Application->bootProvider(Object(App\\Providers\\RouteServiceProvider))
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}(Object(App\\Providers\\RouteServiceProvider), 24)
+#30 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(906): array_walk(Array, Object(Closure))
+#31 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#33 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#34 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#35 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-05-21 16:33:13] local.ERROR: Invalid route action: [AdminHomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [AdminHomeController]. at C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php:92)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('AdminHomeContro...')
+#1 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(191): Illuminate\\Routing\\RouteAction::parse('admin', Array)
+#2 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(172): Illuminate\\Routing\\Route->parseAction(Array)
+#3 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(583): Illuminate\\Routing\\Route->__construct(Array, 'admin', Array)
+#4 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(476): Illuminate\\Routing\\Router->newRoute(Array, 'admin', Array)
+#5 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(455): Illuminate\\Routing\\Router->createRoute(Array, '/admin', Array)
+#6 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(147): Illuminate\\Routing\\Router->addRoute(Array, '/admin', 'AdminHomeContro...')
+#7 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(261): Illuminate\\Routing\\Router->get('/admin', 'AdminHomeContro...')
+#8 C:\\xampp\\htdocs\\Agile_BookShop-Group13\outes\\web.php(18): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
 #9 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\RouteFileRegistrar.php(35): require('C:\\\\xampp\\\\htdocs...')
 #10 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(425): Illuminate\\Routing\\RouteFileRegistrar->register('C:\\\\xampp\\\\htdocs...')
 #11 C:\\xampp\\htdocs\\Agile_BookShop-Group13\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(382): Illuminate\\Routing\\Router->loadRoutes('C:\\\\xampp\\\\htdocs...')

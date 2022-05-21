@@ -15,13 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('adminHomepage');
-});
+Route::get('/admin', AdminHomeController::class)->name('adminhome');
 
-Route::get('stock',function(){
-    return view('');
-});
+Route::get('/user', UserHomeController::class)->name('userhome');
 
 Route::get('about', AboutController::class)->name('about');
 

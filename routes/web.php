@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AdminHomeController;
+use App\Http\Controllers\UserHomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('adminHomepage');
-});
-
-Route::get('stock',function(){
-    return view('');
-});
+Route::get('/admin', AdminHomeController::class)->name('adminhome');
+Route::get('/user', UserHomeController::class)->name('userhome');
 
 Route::get('about', AboutController::class)->name('about');

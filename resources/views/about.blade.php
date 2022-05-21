@@ -9,7 +9,6 @@
     <style>
         .about_content{
             margin: 1%;
-            margin-bottom: 240px;
             padding: 1%;
             padding-left: 2%;
             padding-right: 2%;
@@ -46,7 +45,7 @@
     </style>
 
 </head>
-<body style="background-color: gainsboro;">
+<body style="background-color: rgb(173, 173, 173);">
     <div id="page-container">
     {{ View::make('userHeader') }}
 
@@ -104,7 +103,5 @@
         </script>
 
 </body>
-
-
 
 </html>

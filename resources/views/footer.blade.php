@@ -2,8 +2,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <style>
-    .footer-basic {
-        position: absolute;
+    .footer {
+        position: relative;
         width: 100%;
         bottom: 0;
         padding:40px 0;
@@ -11,7 +11,7 @@
         color:#9d9d9d;
     }
 
-    .footer-basic ul {
+    .footer ul {
         padding:0;
         list-style:none;
         text-align:center;
@@ -20,26 +20,26 @@
         margin-bottom:0;
     }
 
-    .footer-basic li {
+    .footer li {
         padding:0 10px;
     }
 
-    .footer-basic ul a {
+    .footer ul a {
         color:inherit;
         text-decoration:none;
         opacity:0.8;
     }
 
-    .footer-basic ul a:hover {
+    .footer ul a:hover {
         opacity:1;
     }
 
-    .footer-basic .social {
+    .footer .social {
         text-align:center;
         padding-bottom:25px;
     }
 
-    .footer-basic .social > a {
+    .footer .social > a {
         font-size:24px;
         width:40px;
         height:40px;
@@ -53,11 +53,11 @@
         opacity:0.75;
     }
 
-    .footer-basic .social > a:hover {   
+    .footer .social > a:hover {   
         opacity:0.9;
     }
 
-    .footer-basic .copyright {
+    .footer .copyright {
         margin-top:15px;
         text-align:center;
         font-size:15px;
@@ -67,13 +67,13 @@
     </style>    
 </head>
 
-    <div class="footer-basic">
+    <div class="footer">
         <footer>
             <div class="social">
-                <a href="#"><i class="icon ion-social-instagram"></i></a>
-                <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                <a href="#"><i class="icon ion-social-twitter"></i></a>
-                <a href="#"><i class="icon ion-social-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="icon ion-social-instagram"></i></a>
+                <a href="https://www.snapchat.com/" target="_blank"><i class="icon ion-social-snapchat"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="icon ion-social-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="icon ion-social-facebook"></i></a>
             </div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href={{ route('contact_us') }}>Contact Us</a></li>

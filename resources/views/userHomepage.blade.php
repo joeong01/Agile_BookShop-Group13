@@ -6,8 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Book Booking System</title>
 
+    <style>
+        .home{
+            background-color: grey;
+            margin: 1%;
+            padding: 1%;
+            padding-left: 2%;
+            padding-right: 2%;
+        
+        }
+
+        #page-container{
+            position: relative;
+            min-height: 100vh;
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            text-align: center;
+
+        }
+
+        .Display table{
+            width: 1800px;
+            height: 500px;
+            border: 2px solid;
+        }
+
+        .Display img{
+            width: 350px;
+            height: 450px;
+            display: inline-block;
+            padding: 25px;
+        }
+
+        .Display td{
+            font-size: 15px;
+            color: #30BCED;
+            text-align: center;
+            padding-top: 0px;
+
+        }
+
+        .Display th{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #191D32;
+            font-size: 18px;
+            text-align: left;;
+        }
+
+    </style>
+
 </head>
-<body style="background-color: gainsboro;">
+<body style="background-color: rgb(173, 173, 173);">
     {{ View::make('userHeader') }}
 
     <div class="home">
@@ -55,7 +107,7 @@
             </table>
         </div>
     </div>
-    
+
     {{ View::make('footer') }}
 </body>
 </html>

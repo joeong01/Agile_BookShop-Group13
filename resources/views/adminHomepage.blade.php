@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Book Bokking System-Admin</title>
+    <title>Book Booking System-Admin</title>
+    <style>
+        .home{
+            background-color: grey;
+            margin: 1%;
+            padding: 1%;
+            padding-left: 2%;
+            padding-right: 2%;
+        
+        }
 
+        #page-container{
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .Display table{
+            width: 1800px;
+            height: 550px;
+            margin-left: 10px;
+            border: 2px solid;        
+        }
+
+        
+        .Display td{
+            font-size: 23px;
+            padding-top: 1px;
+            border: 2px solid;
+        }
+
+        .Display th{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            text-align: center;
+            border: 2px solid;
+        }
+    </style>
 
 </head>
-<body style="background-color: gainsboro;">
+<body style="background-color: rgb(173, 173, 173);">
     {{ View::make('adminHeader') }}
     <div class="home">
         <div class="Display">
@@ -29,7 +64,6 @@
             </table>
         </div>
     </div>
-
     {{ View::make('footer') }}
 </body>
 </html>

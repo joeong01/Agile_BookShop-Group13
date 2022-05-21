@@ -198,8 +198,8 @@
 <div class="page">
     <nav class="page__menu page__custom-settings menu">
         <ul class="menu__list r-list">
-            <li class="menu__group"><a href="{{  url('/') }}" class="menu__link r-link text-underlined">Logo</a></li>
-            <li class="menu__group"><a href="{{  url('/') }}" class="menu__link r-link text-underlined">Homepage</a></li>
+            <li class="menu__group"><a href="{{ route('adminhome') }}" class="menu__link r-link text-underlined">Logo</a></li>
+            <li class="menu__group"><a href="{{ route('adminhome') }}" class="menu__link r-link text-underlined">Homepage</a></li>
             <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Stock Level</a></li>
         </ul>
     </nav>

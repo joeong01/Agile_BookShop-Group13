@@ -30,7 +30,8 @@
 
         .Display table{
             width: 1800px;
-            height: 550px;
+            height: 500px;
+            border: 2px solid;
         }
 
         .Display img{
@@ -44,14 +45,15 @@
             font-size: 15px;
             color: #30BCED;
             text-align: center;
-            padding-top: 5px;
+            padding-top: 0px;
+
         }
 
         .Display th{
             font-family: Arial, Helvetica, sans-serif;
             color: #191D32;
             font-size: 18px;
-            text-align: left;
+            text-align: left;;
         }
 
     </style>
@@ -67,13 +69,13 @@
                     <th colspan="4" style="color: rgb(0, 0, 0); font-size: 30px;text-align:center" >New Release</th>
                 </tr>
                 <tr>
-                    <td rowspan="3"><img src="{{ url('/Picture/Dark Psycho.jpg') }}" /></td>
+                    <td rowspan="3" ><img src="{{ url('/Picture/Dark Psycho.jpg') }}" /></td>
                     <th style="width: 530px;">DARK PSYCHOLOGY: Dark Hypnosis Technique To Manipulation Human Psychology, Deception, Subliminal Persuasion And Mind Control</th>
-                    <td rowspan="3"><img src="{{ url('/Picture/Screenshot 2022-05-20 103621.png') }}"/></td>
+                    <td rowspan="3" ><img src="{{ url('/Picture/Screenshot 2022-05-20 103621.png') }}"/></td>
                     <th>THE ART OF A LAWYER - CROSS EXAMINATION | ADVOCACY | COURTMANSHIP</th>
                 </tr>
                 <tr>
-                    <th>By :Ryan Watson</th>
+                    <th>By :Ryan Watson<br><br></th>
                     <th>By :Chief Justice M. Monir , Dr. B. Malik</th>
                 </tr>
                 <tr>
@@ -82,6 +84,7 @@
                 </tr>   
             </table>
         </div>
+        <br>
         <div class="Display">
             <table >
                 <tr>

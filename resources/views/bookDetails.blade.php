@@ -89,7 +89,7 @@
 
 </head>
 <body style="background-color: rgb(173, 173, 173);">
-    {{ View::make('adminHeader') }}
+    {{ View::make('userHeader') }}
     <div class="home">
 
     <!-- single product details -->

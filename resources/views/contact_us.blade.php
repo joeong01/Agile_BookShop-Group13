@@ -8,7 +8,6 @@
 
     <style>
         .contact_content{
-            background-color: grey;
             margin: 1%;
             padding: 1%;
             padding-left: 4%;

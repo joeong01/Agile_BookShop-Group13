@@ -96,9 +96,9 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="" alt="images/Empty.jpg" width="100%" id="ProductImg">
+                <img src="{{ url('/Picture/Screenshot 2022-05-20 103621.png') }}" alt="images/Empty.jpg" width="100%" id="ProductImg">
 
-                <div class="small-img-row">
+                <!-- <div class="small-img-row">
                     <div class="small-img-col">
                         <img src="images/Empty1.jpg" width="100%" class="small-img">
                     </div>
@@ -111,19 +111,14 @@
                     <div class="small-img-col">
                         <img src="images/Empty4.jpg" width="100%" class="small-img">
                     </div>
-                </div>
+                </div> -->
 
             </div>
             <div class="col-2">
                 <p>Home / Stock Level</p>
-                <h1>Empty book</h1>
-                <select>
-                    <option>Select Size</option>
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                </select>
+                <h1>5 People You Meet in Heaven</h1>
                 <input type="number" value="1">
+                <button type="button">Submit</button>
                 <!-- <div id="availability">[availability_itemprop]</div>
                 <span style="display: inline;" id="product_inventory">[stock]</span> -->
             </div>

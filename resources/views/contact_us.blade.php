@@ -10,7 +10,6 @@
         .contact_content{
             background-color: grey;
             margin: 1%;
-            margin-bottom: 240px;
             padding: 1%;
             padding-left: 4%;
             padding-right: 2%;

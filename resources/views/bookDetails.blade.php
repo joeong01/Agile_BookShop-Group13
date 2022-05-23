@@ -96,8 +96,8 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="" alt="images/Empty.jpg" width="100%" id="ProductImg">
-
+                <img src="{{ url('/Picture/Screenshot 2022-05-20 104415.png') }}" width="100%" id="ProductImg">
+<!--
                 <div class="small-img-row">
                     <div class="small-img-col">
                         <img src="images/Empty1.jpg" width="100%" class="small-img">
@@ -111,36 +111,31 @@
                     <div class="small-img-col">
                         <img src="images/Empty4.jpg" width="100%" class="small-img">
                     </div>
-                </div>
+                </div>-->
 
             </div>
             <div class="col-2">
                 <p>Home / Books</p>
-                <h1>Empty book</h1>
+                <h1>Modern Advocancy</h1>
                 <h4>RM30</h4>
-                <select>
-                    <option>Select Size</option>
-                    <option>Small</option>
-                    <option>Medium</option>
-                    <option>Large</option>
-                </select>
                 <!-- <input type="number" value="1"> -->
-                <a href="" class="btn">Add To Cart</a>
                 <h3>Product Details <i class="fa fa-ident"></i></h3>
+                <th>By :Elearnor Wong, Lok Vi Ming,<br> The Honourable Justice Vinodh Coomaraswamy</th>
                 <br>
-                <p>Empty Book, A-Z</p>
+                <a href="" class="btn" style="color: black">Add To Cart</a>
+                <!-- <p>Empty Book, A-Z</p> -->
             </div>
         </div>
     </div>
     <!-- title -->
 
-    <div class="small-container">
+    <!--<div class="small-container">
         <div class="ro row-2">
             <h2>Related Products</h2>
             <p>View More</p>
         </div>
     </div>
-    <!-- products -->
+     products 
     <div class="small-container">
         <div class="col-4">
             <img src="images/Empty9.jpg">
@@ -153,7 +148,7 @@
                 <i class="fa fa-star-o"></i>
             </div>
         </div>  
-    </div>
+    </div>-->
 </div>
 
     {{ View::make('footer') }}

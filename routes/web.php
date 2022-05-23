@@ -18,14 +18,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/bdc', bookDetailsController::class)->name('bookDetails');
+Route::get('/bookdetails', bookDetailsController::class)->name('bookDetails');
 
-Route::get('/st', stockLevelController::class)->name('stockLevel');
+Route::get('/stocklevel', stockLevelController::class)->name('stockLevel');
 
 Route::get('/admin', AdminHomeController::class)->name('adminhome');
 
 Route::get('/user', UserHomeController::class)->name('userhome');
 
-Route::get('about', AboutController::class)->name('about');
+Route::get('/about', AboutController::class)->name('about');
 
-Route::get('contactUs', ContactController::class)->name('contact_us');
+Route::get('/contactus', ContactController::class)->name('contact_us');

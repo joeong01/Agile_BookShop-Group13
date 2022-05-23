@@ -6,6 +6,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserHomeController;
 use App\Http\Controllers\bookDetailsController;
 use App\Http\Controllers\stockLevelController;
+use App\Http\Controllers\ShoppingCartController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,11 +21,13 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/bookdetails', bookDetailsController::class)->name('bookDetails');
 
+Route::get('/cart', ShoppingCartController::class)->name('cart');
+
 Route::get('/stocklevel', stockLevelController::class)->name('stockLevel');
 
 Route::get('/admin', AdminHomeController::class)->name('adminhome');
 
-Route::get('/user', UserHomeController::class)->name('userhome');
+Route::get('/', UserHomeController::class)->name('userhome');
 
 Route::get('/about', AboutController::class)->name('about');
 

@@ -11,4 +11,3 @@ class ShoppingCartController extends Controller
         return view('shoppingCartItems');
     }
 }
-

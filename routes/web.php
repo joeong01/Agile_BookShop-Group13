@@ -4,6 +4,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserHomeController;
+use App\Http\Controllers\bookDetailsController;
+use App\Http\Controllers\stockLevelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/bdc', bookDetailsController::class)->name('bookDetails');
+
+Route::get('/st', stockLevelController::class)->name('stockLevel');
 
 Route::get('/admin', AdminHomeController::class)->name('adminhome');
 

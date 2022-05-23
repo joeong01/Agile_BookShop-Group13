@@ -199,7 +199,8 @@
     <ul class="menu__list r-list">
       <li class="menu__group"><a href="{{  route('userhome') }}"  class="menu__link r-link text-underlined">Logo</a></li>
       <li class="menu__group"><a href="{{  route('userhome') }}"  class="menu__link r-link text-underlined">Homepage</a></li>
-      <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Books</a></li>
+      <li class="menu__group"><a href="{{  route('bookDetails') }}" class="menu__link r-link text-underlined">Books</a></li>
+      <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined"><img src="{{ url('/Picture/cart.jpg') }}" width="40px" height="40px"/></a></li>
     </ul>
   </nav>
 </div>

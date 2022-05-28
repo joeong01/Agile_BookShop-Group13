@@ -14,6 +14,7 @@ class AdminHomeController extends Controller
         $stock = DB:: select('select b.ISBN_13, b.bookName, s.stockLevel
                                 from stock s ,book b
                                 where b.ISBN_13 = s.ISBN_13');
-        return view('adminHomepage', compact("stock"));
+        $type = "Admin";
+        return view('adminHomepage', compact("stock","type"));
     }
 }

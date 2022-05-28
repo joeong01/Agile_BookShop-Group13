@@ -1,5 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+{{-- 
+@if(Auth::user-())
+@extends('userFrame')
+ --}}
+ @extends('adminFrame')
+ @section('content')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +20,7 @@
         
         #page-container{
             position: relative;
-            min-height: 100vh;
+            min-height: 100px;
         }
 
         input[type=text]{
@@ -24,7 +28,7 @@
             padding: 5px;
             margin-bottom: 5px; 
         }
-
+        
         input[type=submit]{
             width: 100px;
             padding: 5px;
@@ -41,9 +45,7 @@
 
 </head>
 <body style="background-color: gainsboro;">
-    <div id="page-container">
-    {{ View::make('userHeader') }}
-    
+    <div id="page-container">    
     <div class='contact_content'>
         <h1>Contact Us</h1>
         <h4>Have a question to ask us? Fill up the form below to contact us.</h4><br>
@@ -62,7 +64,6 @@
 
     </div>
 
-    {{ View::make('footer') }}
     </div>
 </body>
-</html>
+@endsection

@@ -19,15 +19,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', AdminHomeController::class)->name('adminHome');
+
+Route::get('/user', UserHomeController::class)->name('userHome');
+
+// Route::get('/', UserFrameController::class)->name('userFrame');
+
 Route::get('/bookdetails', bookDetailsController::class)->name('bookDetails');
 
 Route::get('/cart', ShoppingCartController::class)->name('cart');
 
 Route::get('/stocklevel', stockLevelController::class)->name('stockLevel');
-
-Route::get('/admin', AdminHomeController::class)->name('adminhome');
-
-Route::get('/', UserHomeController::class)->name('userhome');
 
 Route::get('/about', AboutController::class)->name('about');
 

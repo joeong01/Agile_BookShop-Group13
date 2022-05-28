@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('userFrame')
+@section('content')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Book Booking System</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         .home{
             background-color: grey;
@@ -32,6 +34,8 @@
             width: 1800px;
             height: 500px;
             border: 2px solid;
+            margin-left: 50px;
+            margin-bottom: 30px;]
         }
 
         .Display img{
@@ -56,58 +60,82 @@
             text-align: left;;
         }
 
+        .carousel-inner img {
+            width: 480px;
+            height: 610px;
+            margin-left: 215px;
+        }
+
+        .carousel-caption{
+            margin-top: 620px;
+        }
+
+        .carousel{
+            width: 900px; 
+            height: 760px; 
+            margin-left: 500px; 
+            margin-top: 10px;
+            margin-bottom: 5px;
+            background-color:rgb(66, 66, 66);
+            padding-top: 10px;
+       }
     </style>
 
 </head>
-<body style="background-color: rgb(173, 173, 173);">
-    {{ View::make('userHeader') }}
+<body>
 
-    <div class="home">
-        <div class="Display">
-            <table>
-                <tr>
-                    <th colspan="4" style="color: rgb(0, 0, 0); font-size: 30px;text-align:center" >New Release</th>
-                </tr>
-                <tr>
-                    <td rowspan="3" ><img src="{{ url('/Picture/Dark Psycho.jpg') }}" /></td>
-                    <th style="width: 530px;">DARK PSYCHOLOGY: Dark Hypnosis Technique To Manipulation Human Psychology, Deception, Subliminal Persuasion And Mind Control</th>
-                    <td rowspan="3" ><img src="{{ url('/Picture/Screenshot 2022-05-20 103621.png') }}"/></td>
-                    <th>THE ART OF A LAWYER - CROSS EXAMINATION | ADVOCACY | COURTMANSHIP</th>
-                </tr>
-                <tr>
-                    <th>By :Ryan Watson<br><br></th>
-                    <th>By :Chief Justice M. Monir , Dr. B. Malik</th>
-                </tr>
-                <tr>
-                    <th>Price : 60.00</th>
-                    <th>Price : 250.00</th>
-                </tr>   
-            </table>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1" class="active"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="{{ url('/Picture/Dark Psycho.jpg') }}" >
+            <br><br><br><br><br><br><br>
+            <div class="carousel-caption">
+                <h3>Top Sale</h3>
+                <p>DARK PSYCHOLOGY: Dark Hypnosis Technique To Manipulation Human Psychology, Deception, Subliminal Persuasion And Mind Control</p>
+            </div>   
+            </div>
+            <div class="carousel-item">
+            <img src="{{ url('/Picture/Screenshot 2022-05-20 103621.png') }}">
+            <br><br><br><br><br><br>
+            <div class="carousel-caption">
+                <h3>New Release</h3>
+                <p>THE ART OF A LAWYER - CROSS EXAMINATION | ADVOCACY | COURTMANSHIP</p>
+            </div>   
+            </div> 
         </div>
-        <br>
-        <div class="Display">
-            <table >
-                <tr>
-                    <th colspan="4" style="color: rgb(0, 0, 0); font-size: 30px;text-align:center">Top Sale</th>
-                </tr>
-                <tr>
-                    <td rowspan="3"><img src="{{ url('/Picture/Screenshot 2022-05-20 104415.png') }}" /></td>
-                    <th>MODERN ADVOCACY - MORE PERSPECTIVES FROM<br> SINGAPORE</th>
-                    <td rowspan="3"><img src="{{ url('/Picture/Screenshot 2022-05-20 104600.png') }}" /></td>
-                    <th>FUNDAMENTALS OF TRIAL TECHNIQUE 4TH AUSTRALIAN ED</th>
-                </tr>
-                <tr>
-                    <th>By :Elearnor Wong, Lok Vi Ming,<br> The Honourable Justice Vinodh Coomaraswamy</th>
-                    <th>By : Thomas A Mauet, Les A. McCrimmon</th>
-                </tr>
-                <tr>
-                    <th>Price : 310.00</th>
-                    <th>Price : 350.00</th>
-                </tr>   
-            </table>
-        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
     </div>
 
-    {{ View::make('footer') }}
+    <br>
+    <div class="Display">
+        <table >
+            <tr>
+                <th colspan="4" style="color: rgb(0, 0, 0); font-size: 30px;text-align:center">Discount</th>
+            </tr>
+            <tr>
+                <td rowspan="3"><img src="{{ url('/Picture/Screenshot 2022-05-20 104415.png') }}" /></td>
+                <th>MODERN ADVOCACY - MORE PERSPECTIVES FROM<br> SINGAPORE</th>
+                <td rowspan="3"><img src="{{ url('/Picture/Screenshot 2022-05-20 104600.png') }}" /></td>
+                <th>FUNDAMENTALS OF TRIAL TECHNIQUE 4TH AUSTRALIAN ED</th>
+            </tr>
+            <tr>
+                <th>By :Elearnor Wong, Lok Vi Ming,<br> The Honourable Justice Vinodh Coomaraswamy</th>
+                <th>By : Thomas A Mauet, Les A. McCrimmon</th>
+            </tr>
+            <tr>
+                <th>Original Price : RM<s>310.00</s> RM 260.00</th>
+                <th>Price : RM<s>350.00</s> RM 300.00</th>
+            </tr>   
+        </table>
+    </div>
 </body>
-</html>
+@endsection

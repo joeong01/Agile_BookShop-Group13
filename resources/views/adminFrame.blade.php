@@ -203,7 +203,7 @@
             position: relative;
             width: 100%;
             bottom: 0;
-            padding:40px 0;
+            padding:30px 0;
             background-color: rgb(44, 47, 44);
             color:#9d9d9d;
         }

@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Book Bokking System-Admin</title>
+    <title>About us</title>
 
     <style>
         .contact_content{
@@ -46,24 +46,23 @@
 </head>
 <body style="background-color: gainsboro;">
     <div id="page-container">    
-    <div class='contact_content'>
-        <h1>Contact Us</h1>
-        <h4>Have a question to ask us? Fill up the form below to contact us.</h4><br>
+        <div class='contact_content'>
+            <h1>Contact Us</h1>
+            <h4>Have a question to ask us? Fill up the form below to contact us.</h4><br>
 
-        <form>
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="inquiry">Your inquiry:</label><br>
-            <textarea style="resize: none" id="inquiry" name="inquiry"></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
+            <form>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
+                <label for="inquiry">Your inquiry:</label><br>
+                <textarea style="resize: none" id="inquiry" name="inquiry"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
 
-    </div>
-
+        </div>
     </div>
 </body>
 @endsection

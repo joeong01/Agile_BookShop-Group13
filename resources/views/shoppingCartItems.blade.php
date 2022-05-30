@@ -266,7 +266,6 @@
     </style>    
 </head>
 <body>
-{{ View::make('userHeader') }}
 
     <div id="shopping-cart">
     <div class="txt-heading">Shopping Cart</div>
@@ -321,6 +320,4 @@
 }
 ?>
 </div>
-
-{{ View::make('footer') }}
 </body>

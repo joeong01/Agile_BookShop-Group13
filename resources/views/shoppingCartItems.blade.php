@@ -35,7 +35,7 @@
             height: 500px;
             border: 2px solid;
             margin-left: 50px;
-            margin-bottom: 30px;]
+            margin-bottom: 30px;
         }
 
         .Display img{
@@ -83,58 +83,55 @@
 </head>
 <body>
 
-    <div id="shopping-cart">
-    <div class="txt-heading">Shopping Cart</div>
-
-        <a id="btnEmpty" href="index.php?action=empty">Empty Cart</a>
-    <?php
-    if(isset($_SESSION["cart_item"])){
-        $total_quantity = 0;
-        $total_price = 0;
-?>	
-<table class="tbl-cart" cellpadding="10" cellspacing="1">
-<tbody>
-<tr>
-<th style="text-align:left;">Name</th>
-<th style="text-align:left;">Code</th>
-<th style="text-align:right;" width="5%">Quantity</th>
-<th style="text-align:right;" width="10%">Unit Price</th>
-<th style="text-align:right;" width="10%">Price</th>
-<th style="text-align:center;" width="5%">Remove</th>
-</tr>	
-<?php		
-    foreach ($_SESSION["cart_item"] as $item){
-        $item_price = $item["quantity"]*$item["price"];
-		?>
-				<tr>
-				<td><img src="<?php echo $item["image"]; ?>" class="cart-item-image" /><?php echo $item["name"]; ?></td>
-				<td><?php echo $item["code"]; ?></td>
-				<td style="text-align:right;"><?php echo $item["quantity"]; ?></td>
-				<td  style="text-align:right;"><?php echo "$ ".$item["price"]; ?></td>
-				<td  style="text-align:right;"><?php echo "$ ". number_format($item_price,2); ?></td>
-				<td style="text-align:center;"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
-				</tr>
-				<?php
-				$total_quantity += $item["quantity"];
-				$total_price += ($item["price"]*$item["quantity"]);
-		}
-		?>
-
-<tr>
-<td colspan="2" align="right">Total:</td>
-<td align="right"><?php echo $total_quantity; ?></td>
-<td align="right" colspan="2"><strong><?php echo "$ ".number_format($total_price, 2); ?></strong></td>
-<td></td>
-</tr>
-</tbody>
-</table>		
-  <?php
-} else {
-?>
-<div class="no-records">Cart is Empty</div>
-<?php 
-}
-?>
+<div class="cart content-wrapper">
+    <h1>Shopping Cart</h1>
+    <form action="index.php?page=cart" method="post">
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="2">Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <?php if (empty($products)): ?>
+                <tr>
+                    <td colspan="5" style="text-align:center;">You have no products added in your Shopping Cart</td>
+                </tr>
+                <?php else: ?>
+                <?php foreach ($products as $product): ?>
+                <tr>
+                    <td class="img">
+                        <a href="index.php?page=product&id=<?=$product['id']?>">
+                            <img src="imgs/<?=$product['img']?>" width="50" height="50" alt="<?=$product['name']?>">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="index.php?page=product&id=<?=$product['id']?>"><?=$product['name']?></a>
+                        <br>
+                        <a href="index.php?page=cart&remove=<?=$product['id']?>" class="remove">Remove</a>
+                    </td>
+                    <td class="price">&dollar;<?=$product['price']?></td>
+                    <td class="quantity">
+                        <input type="number" name="quantity-<?=$product['id']?>" value="<?=$products_in_cart[$product['id']]?>" min="1" max="<?=$product['quantity']?>" placeholder="Quantity" required>
+                    </td>
+                    <td class="price">&dollar;<?=$product['price'] * $products_in_cart[$product['id']]?></td>
+                </tr>
+                <?php endforeach; ?>
+                <?php endif; ?>
+            </tbody>
+        </table>
+        <div class="subtotal">
+            <span class="text">Subtotal</span>
+            <span class="price">&dollar;<?=$subtotal?></span>
+        </div>
+        <div class="buttons">
+            <input type="submit" value="Update" name="update">
+            <input type="submit" value="Place Order" name="placeorder">
+        </div>
+    </form>
 </div>
 </body>
 @endsection

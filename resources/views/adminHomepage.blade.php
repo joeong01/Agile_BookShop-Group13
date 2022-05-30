@@ -1,5 +1,33 @@
 @extends('adminFrame')
 @section('content')
+
+@php
+$lowStock =0;
+
+foreach ($stock as $row){
+    if ( $row->stockLevel < 5){
+        $lowStock += 1;   
+    }
+}
+$totalBook = count($stock);
+
+$dataPoints
+foreach ($dataPoints as $key => $value) {
+}
+
+$dataPoints = array( 
+    array("label"=>"Action and Adventure", "y"=>0),
+    array("label"=>"Classics", "y"=>0),
+    array("label"=>"Comic Book or Graphic Novel", "y"=>0),
+    array("label"=>"Detective and Mystery", "y"=>0),
+    array("label"=>"Fantasy", "y"=>0),
+    array("label"=>"Historical Fiction","y"=>0),
+    array("label"=>"Horror", "y"=>0),
+    array("label"=>"Romance", "y"=>0),
+    array("label"=>"Education", "y"=>0),
+)
+@endphp
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,26 +68,34 @@
             border: 2px solid;
         }
     </style>
-
+    <script> 
+        window.onload = function() {
+            var categories = new CanvasJS.Chart("categories", {
+                theme: "light2",
+                animationEnabled: true,
+                title: {
+                    text: "Categories of book"
+                },
+                data: [{
+                    type: "doughnut",
+                    indexLabel: "{label} - {y}",
+                    yValueFormatString: "#,##0.0\"%\"",
+                    showInLegend: true,
+                    legendText: "{label} : {y}",
+                    dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+                }]
+            });
+            categories.render();
+        }
+    </script>
 </head>
 <body style="background-color: rgb(173, 173, 173);">
     <div class="home">
-        <div class="Display">
-            <table>                
-                <tr>
-                    <th colspan="3" style="color: rgb(0, 0, 0); font-size: 30px;text-align:center" >Stock Level</th>
-                </tr>
-                <tr>
-                    <th>IBSN_13</th>
-                    <th>Book Title</th>
-                    <th>Stock Level</th>
-            @foreach ($stock as $row)
-                <tr>
-                    <td>{{ $row->ISBN_13 }}</td>
-                    <td>{{ $row->bookName }}</td>
-                    <td style="text-align: center">{{ $row->stockLevel }}</td>
-            @endforeach
-            </table>
-        </div>
+        <table>
+            <tr>
+                <th>Total of Books : </th>
+                <th>Book that are low stock : </th>
+        <div id="categories" style="height: 370px; width: 350px;"></div>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </div>
 @endsection

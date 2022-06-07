@@ -9,16 +9,15 @@
     <style>
         .filter{
             width: 270px;
-            margin-left: 10px;
-            margin-right: 13px;
-            margin-bottom: 13px;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-bottom: 2%;
             float: left;
         }
 
         .content{
-            width: 1580px;
-            margin-top: 16px;
-            margin-bottom: 17px;
+            width: 79%;
+            margin-top: 1%;
             float: left;
         }
 
@@ -28,7 +27,7 @@
         }
 
         table{
-            width: 1580px;
+            width: 100%;
             border: 2px solid;        
         }
 

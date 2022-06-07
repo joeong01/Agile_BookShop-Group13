@@ -5,14 +5,13 @@
     $lowStock =0;
     $x=0;
     $y=0;
-    $value = array(0,0,0,0,0,0,0,0,0);
+    $value = array(0,0,0,0,0,0,0,0);
     $dataPoints = array( 
         array("label"=>"Action and Adventure", "y"=>0),
         array("label"=>"Classics", "y"=>0),
-        array("label"=>"Comic Book or Graphic Novel", "y"=>0),
+        array("label"=>"Comic Book", "y"=>0),
         array("label"=>"Detective and Mystery", "y"=>0),
         array("label"=>"Fantasy", "y"=>0),
-        array("label"=>"Historical Fiction","y"=>0),
         array("label"=>"Horror", "y"=>0),
         array("label"=>"Romance", "y"=>0),
         array("label"=>"Education", "y"=>0));
@@ -88,7 +87,7 @@
         var category = new CanvasJS.Chart("categories", {
             theme: "dark2",
             animationEnabled: false,
-            title: { text: "Categories of book" },
+            title: { text: "Total book of Categories" },
             data: [{
                 type: "pie",
                 indexLabel: "{label} - {y}",

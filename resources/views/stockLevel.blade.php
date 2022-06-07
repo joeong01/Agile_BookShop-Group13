@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('adminFrame')
+@section('content')
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stock Level</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .home{
-            background-color: grey;
-            margin: 1%;
-            padding: 1%;
-            padding-left: 2%;
-            padding-right: 2%;
-        
+        .filter{
+            width: 270px;
+            margin-left: 10px;
+            margin-right: 13px;
+            margin-bottom: 13px;
+            float: left;
+        }
+
+        .content{
+            width: 1580px;
+            margin-top: 16px;
+            margin-bottom: 17px;
+            float: left;
         }
 
         #page-container{
@@ -20,113 +27,186 @@
             min-height: 100vh;
         }
 
-        .Display table{
-            width: 1800px;
-            height: 550px;
-            margin-left: 10px;
+        table{
+            width: 1580px;
             border: 2px solid;        
         }
 
-        
-        .Display td{
-            font-size: 23px;
+        td{
+            font-size: 17px;
             padding-top: 1px;
             border: 2px solid;
         }
 
-        .Display th{
+        th{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 24px;
+            font-size: 18px;
             text-align: center;
             border: 2px solid;
-        }
-
-        .single-product{
-            margin-top: 80px;
-
-        }
-        .single-product .col-2 img{
-            padding: 0;
-        }
-        .single-product .col-2{
-            padding: 20px;
-        }
-        .single-product .col-2 img{
-            margin: 20px 0;
-            font-size: 22px;
-            font-weight: bold;
-        }
-        .single-product select{
-            display:block;
-            padding:10px;
-            margin-top: 20px;
-        }
-        .single-product input{
-            width: 50px;
-            height: 40px;
-            padding-left: 10px;
-            font-size: 20px;
-            margin-right: 10px;
-            border: 1px solid #3bf8ff;
-        }
-        input:focus{
-            outline: none;
-        }
-        .single-product .fa{
-            color: #3bf8ff;
-            margin-left: 10px;
-        }
-        .small-img-row{
-            display: flex;
-            justify-content: space-between;
-        }
-        .small-img-col{
-            flex-basis: 24%;
-            cursor: pointer;
         }
 
     </style>
 
 </head>
-<body style="background-color: rgb(173, 173, 173);">
-    {{ View::make('adminHeader') }}
-    <div class="home">
+<body style="background-color: rgb(173, 173, 173);" > 
+<div class="float-container">
+    <div class="filter">
+        <form action="" method="GET">
+            <div class="card shadow mt-3">
+                <div class="card-header">
+                    <h5>filter and Sort 
+                        <button type="submit" class="btn btn-primary btn-sm float-end">Search</button>
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <h6>Category List</h6>
+                    <hr>
+                    <?php
+                    $con = mysqli_connect("localhost","root","","bookstore");
 
-    <!-- single product details -->
-    <div class="small-container single-product">
-        <div class="row">
-            <div class="col-2">
-                <img src="{{ url('/Picture/Screenshot 2022-05-20 103621.png') }}" alt="images/Empty.jpg" width="100%" id="ProductImg">
+                    $book = "SELECT * FROM category";
+                    $book_run  = mysqli_query($con, $book);
 
-                <!-- <div class="small-img-row">
-                    <div class="small-img-col">
-                        <img src="images/Empty1.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="images/Empty2.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="images/Empty3.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="images/Empty4.jpg" width="100%" class="small-img">
-                    </div>
-                </div> -->
+                    foreach($book_run as $booklist)
+                    {
+                        $checked = [];
+                        if(isset($_GET['categories']))
+                        {
+                            $checked = $_GET['categories'];
+                        }
+                        ?>
+                            <div>
+                                <input type="checkbox" name="categories[]" value="<?= $booklist['categoryID']; ?>" 
+                                    <?php if(in_array($booklist['categoryID'], $checked)){ echo "checked"; } ?>
+                                    />
+                                <?= $booklist['categoryName']; ?>
+                            </div>
+                    <?php
+                    }
+                    ?>
+                </div>
+                <div class="card-body">
+                    <h6>Sorting</h6>
+                    <hr>
+                    <h6>ISBN</h6>
+                    <input type="radio" name="type" value="book.ISBN_13 ASC" checked="checked" 
+                        <?php if (!empty($_GET['type']) && $_GET['type'] == "book.ISBN_13 ASC"){ echo "checked"; }?>
+                    > Ascending
+                    <input type="radio" name="type" 
+                        <?php if (!empty($_GET['type']) && $_GET['type'] == "book.ISBN_13 DESC"){ echo "checked"; }?>
+                    value="book.ISBN_13 DESC"> Descending 
+                    <br><br>
+                    
+                    <h6>Book Name</h6>
+                    <input type="radio" name="type"
+                        <?php if (!empty($_GET['type']) && $_GET['type'] == "book.bookName ASC"){ echo "checked"; }?>
+                     value="book.bookName ASC"> Ascending
+                    <input type="radio" name="type" 
+                        <?php if (!empty($_GET['type']) && $_GET['type'] == "book.bookName DESC"){ echo "checked"; }?>
+                    value="book.bookName DESC"> Descending 
+                    <br><br>
 
+                    <h6>Stock Level</h6>
+                    <input type="radio" name="type" value="stock.stockLevel ASC" 
+                        <?php if (!empty($_GET['type']) && $_GET['type'] == "stock.stockLevel ASC"){ echo "checked"; }?>
+                    > Ascending
+                    <input type="radio" name="type" 
+                        <?php if (!empty($_GET['type']) && $_GET['type'] == "stock.stockLevel DESC"){ echo "checked"; }?>
+                    value="stock.stockLevel DESC"> Descending 
+
+                    <br><br>
+                    <h6>Category</h6>
+                    <input type="radio" name="category" value="category.categoryName ASC"> Ascending
+                        <?php if (!empty($_GET['type']) && $_GET['type'] == "category.categoryName ASC"){ echo "checked"; }?>
+                    <input type="radio" name="category" 
+                        <?php if (!empty($_GET['type']) && $_GET['type'] == "category.categoryName DESC"){ echo "checked"; }?>
+                    value="category.categoryName DESC"> Descending 
+                </div>
             </div>
-            <div class="col-2">
-                <p>Home / Stock Level</p>
-                <h1>5 People You Meet in Heaven</h1>
-                <input type="number" value="1">
-                <button type="button">Submit</button>
-                <!-- <div id="availability">[availability_itemprop]</div>
-                <span style="display: inline;" id="product_inventory">[stock]</span> -->
-            </div>
+        </form>
+    </div>
+    <!-- categories Items - Products -->
+    <div class="content">
+        <div class="card">
+            <?php
+                if(isset($_GET['categories']))
+                {
+                    $categorychecked = [];
+                    $categorychecked = $_GET['categories'];
+
+                    foreach($categorychecked as $rowcategory)
+                    {
+                        $products = "SELECT book.ISBN_13, book.bookName, stock.stockLevel, category.categoryName FROM book JOIN stock ON book.ISBN_13 = stock.ISBN_13 JOIN category ON book.bookCategory = category.categoryID Where book.bookCategory IN (\"$rowcategory\") ORDER By ".$_GET['type']." ";
+
+                        $products_run = mysqli_query($con, $products);
+                        if(mysqli_num_rows($products_run) > 0)
+                        {
+                            ?>
+                            <table>
+                                <tr>
+                                    <th>ISBN_13</th>
+                                    <th>Book Name</th>
+                                    <th>Category</th>
+                                    <th>Stock Level</th>
+                                </tr>
+                                <?php
+                                foreach($products_run as $proditems){
+                                    ?>
+                                    <tr>
+                                        <th>{{ $proditems['ISBN_13']; }}</th>
+                                        <th>{{ $proditems['bookName'] }}</th>
+                                        <th>{{ $proditems['categoryName'] }}</th>
+                                        <th>{{ $proditems['stockLevel'] }}</th>
+                                    </tr>
+                                    <?php
+                                }
+                                ?>
+                            </table>
+                            <?php
+                        }
+                    }
+                }
+                else
+                {
+                    $products = "SELECT book.ISBN_13, book.bookName, stock.stockLevel, category.categoryName FROM book JOIN stock ON book.ISBN_13 = stock.ISBN_13 JOIN category ON category.categoryID = book.bookCategory ";
+                    $products_run = mysqli_query($con, $products);
+                    if(mysqli_num_rows($products_run) > 0)
+                    {?>
+                        <table>
+                            <tr>
+                                <th>ISBN_13</th>
+                                <th>Book Name</th>
+                                <th>Category</th>
+                                <th>Stock Level</th>
+                            </tr>
+                        <?php
+                        foreach($products_run as $proditems){
+                            ?>
+                            <tr>
+                                <th>{{ $proditems['ISBN_13']; }}</th>
+                                <th>{{ $proditems['bookName'] }}</th>
+                                <th>{{ $proditems['categoryName'] }}</th>
+                                <th>{{ $proditems['stockLevel'] }}</th>
+                            </tr>
+                            <?php
+                        }
+                        ?>
+                        </table>
+                    <?php
+                    }
+                    else
+                    {
+                        echo "No Items Found";
+                    }
+                }
+            ?>
         </div>
     </div>
-    </div>
+</div>
 
-    {{ View::make('footer') }}
-    
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html>
+
+@endsection

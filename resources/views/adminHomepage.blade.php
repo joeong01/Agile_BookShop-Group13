@@ -54,14 +54,14 @@
 
         
         .Display td{
-            font-size: 23px;
+            font-size: 19px;
             padding-top: 1px;
             border: 3px solid;
         }
 
         .Display th{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 30px;
+            font-size: 26px;
             text-align: center;
             border: 3px solid;
         }
@@ -70,7 +70,7 @@
 
 <body style="background-color: rgb(173, 173, 173);" >
     
-    <table class="Display" style="margin-left: 500px;margin-top: 8px;margin-bottom: 8px ">
+    <table class="Display" style="margin-left: 22%;margin-top: 1%;margin-bottom: 1% ">
         <tr style="height: 100px">
             <th>Total of Books : {{ $totalBook }}</th>
             <th>Books that are low stock : <span style="color: red;"">{{ $lowStock }} </span></th>

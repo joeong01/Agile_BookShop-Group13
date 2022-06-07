@@ -37,7 +37,7 @@
             height: 500px;
             border: 2px solid;
             margin-left: 50px;
-            margin-bottom: 30px;]
+            margin-bottom: 30px;
         }
 
         .Display img{

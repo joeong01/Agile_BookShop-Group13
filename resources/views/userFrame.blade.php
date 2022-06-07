@@ -273,7 +273,7 @@
             <li class="menu__group"><a href="{{  route('userHome') }}"  class="menu__link r-link text-underlined">Logo</a></li>
             <li class="menu__group"><a href="{{  route('userHome') }}"  class="menu__link r-link text-underlined">Homepage</a></li>
             <li class="menu__group"><a href="{{  route('bookDetails') }}" class="menu__link r-link text-underlined">Books</a></li>
-            <li class="menu__group" style="position:absolute; right:30px; margin-top:-16px"><a href="{{  route('cart') }}"  class="menu__link r-link text-underlined" ><img src="{{ url('/Picture/cart.jpg') }}" width="45px" height="45px" style="margin-bottom: -10px:"/><span class="badge badge-pill badge-danger"><!--{{ count((array) session('cart')) }}</span>--></a></li>
+            <li class="menu__group" style="position:absolute; right:30px; margin-top:-16px"><a href="{{  route('cart') }}"  class="menu__link r-link text-underlined" ><img src="{{ url('/Picture/cart.jpg') }}" width="45px" height="45px" style="margin-bottom: -10px;"/><span class="badge badge-pill badge-danger"><!--{{ count((array) session('cart')) }}</span>--></a></li>
         </nav>
     </div>
     <div>

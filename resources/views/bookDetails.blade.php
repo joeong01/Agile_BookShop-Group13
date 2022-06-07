@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('userFrame')
+@section('content')
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Book Details</title>
     <style>
         .home{
             background-color: grey;
@@ -89,7 +88,6 @@
 
 </head>
 <body style="background-color: rgb(173, 173, 173);">
-    {{ View::make('userHeader') }}
     <div class="home">
 
     <!-- single product details -->
@@ -151,7 +149,6 @@
     </div>-->
 </div>
 
-    {{ View::make('footer') }}
 
     <!-- js for toggle menu -->
     <script>
@@ -190,4 +187,4 @@
     
 </body>
 </html>
-
+@endsection

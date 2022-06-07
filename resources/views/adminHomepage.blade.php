@@ -87,7 +87,7 @@
         var category = new CanvasJS.Chart("categories", {
             theme: "dark2",
             animationEnabled: false,
-            title: { text: "Total book of Categories" },
+            title: { text: "Total Categories" },
             data: [{
                 type: "pie",
                 indexLabel: "{label} - {y}",

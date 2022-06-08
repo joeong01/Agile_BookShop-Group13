@@ -24,8 +24,6 @@ Route::get('/', AdminHomeController::class)->name('adminHome');
 
 Route::get('/user', UserHomeController::class)->name('userHome');
 
-// Route::get('/', UserFrameController::class)->name('userFrame');
-
 Route::get('/bookdetails', bookDetailsController::class)->name('bookDetails');
 
 Route::get('/cart', ShoppingCartController::class)->name('cart');

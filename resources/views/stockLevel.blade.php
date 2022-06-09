@@ -18,6 +18,7 @@
         .content{
             width: 79%;
             margin-top: 1%;
+            margin-bottom: 1%;
             float: left;
         }
 
@@ -43,7 +44,6 @@
             text-align: center;
             border: 2px solid;
         }
-
     </style>
 
 </head>
@@ -127,6 +127,7 @@
     <!-- categories Items - Products -->
     <div class="content">
         <div class="card">
+            <form action="" method="GET">
             <?php
                 if(isset($_GET['categories']))
                 {
@@ -147,6 +148,8 @@
                                     <th>Book Name</th>
                                     <th>Category</th>
                                     <th>Stock Level</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
                                 </tr>
                                 <?php
                                 foreach($products_run as $proditems){
@@ -156,6 +159,8 @@
                                         <th>{{ $proditems['bookName'] }}</th>
                                         <th>{{ $proditems['categoryName'] }}</th>
                                         <th>{{ $proditems['stockLevel'] }}</th>
+                                        <td><input type="image" src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"/></td>
+                                        <td><input type="image" src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"/></button></td>
                                     </tr>
                                     <?php
                                 }
@@ -177,15 +182,19 @@
                                 <th>Book Name</th>
                                 <th>Category</th>
                                 <th>Stock Level</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
-                        <?php
-                        foreach($products_run as $proditems){
-                            ?>
-                            <tr>
-                                <th>{{ $proditems['ISBN_13']; }}</th>
-                                <th>{{ $proditems['bookName'] }}</th>
-                                <th>{{ $proditems['categoryName'] }}</th>
-                                <th>{{ $proditems['stockLevel'] }}</th>
+                            <?php
+                            foreach($products_run as $proditems){
+                                ?>
+                                <tr>
+                                    <th>{{ $proditems['ISBN_13']; }}</th>
+                                    <th>{{ $proditems['bookName'] }}</th>
+                                    <th>{{ $proditems['categoryName'] }}</th>
+                                    <th>{{ $proditems['stockLevel'] }}</th>
+                                    <td><input type="image" src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"/></td>
+                                    <td><input type="image" src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"/></button></td>
                             </tr>
                             <?php
                         }
@@ -199,6 +208,7 @@
                     }
                 }
             ?>
+            </form>
         </div>
     </div>
 </div>

@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class EditBookController extends Controller
 {
-    //
+    public function __invoke()
+    {
+        return view('edit_book');
+    }
 }

@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserHomeController;
 use App\Http\Controllers\bookDetailsController;
+use App\Http\Controllers\EditBookController;
 use App\Http\Controllers\stockLevelController;
 use App\Http\Controllers\ShoppingCartController;
 use Illuminate\Support\Facades\Route;
@@ -33,3 +34,5 @@ Route::get('/stocklevel', stockLevelController::class)->name('stockLevel');
 Route::get('/about', AboutController::class)->name('about');
 
 Route::get('/contactus', ContactController::class)->name('contact_us');
+
+Route::get('/edit_book', EditBookController::class)->name('edit_book');

@@ -159,7 +159,7 @@
                                         <th>{{ $proditems['bookName'] }}</th>
                                         <th>{{ $proditems['categoryName'] }}</th>
                                         <th>{{ $proditems['stockLevel'] }}</th>
-                                        <td><input type="image" src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"/></td>
+                                        <td><a href="http://127.0.0.1:8000/edit_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"></a></td>
                                         <td><input type="image" src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"/></button></td>
                                     </tr>
                                     <?php
@@ -188,12 +188,13 @@
                             <?php
                             foreach($products_run as $proditems){
                                 ?>
+                                
                                 <tr>
                                     <th>{{ $proditems['ISBN_13']; }}</th>
                                     <th>{{ $proditems['bookName'] }}</th>
                                     <th>{{ $proditems['categoryName'] }}</th>
                                     <th>{{ $proditems['stockLevel'] }}</th>
-                                    <td><input type="image" src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"/></td>
+                                    <td><a href="http://127.0.0.1:8000/edit_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"></a></td>
                                     <td><input type="image" src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"/></button></td>
                             </tr>
                             <?php

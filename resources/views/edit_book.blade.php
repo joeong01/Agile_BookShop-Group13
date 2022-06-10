@@ -20,7 +20,7 @@
         }
 
         input[type=text]{
-            width: 25%;
+            width: 50%;
             padding: 5px;
             margin-bottom: 5px; 
         }

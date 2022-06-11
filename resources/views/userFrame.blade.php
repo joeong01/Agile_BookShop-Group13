@@ -157,15 +157,15 @@
     
     .page{
         box-sizing: border-box;
-        width: 100%;
         margin: 0px;
         position: relative;
+        float:left;
     }
     
     .page__menu:nth-child(n+2){
         margin-top: 3rem;
     }
-  
+
   
     .substack{
         border:1px solid #EEE; 
@@ -267,16 +267,23 @@
 </head>
 
 <body style="background-color: rgb(173, 173, 173);">
-    <div class="page">
+<div class="float-container">
+    <div class="page" style="width:80%;">
         <nav class="page__menu page__custom-settings menu">
         <ul class="menu__list r-list">
             <li class="menu__group"><a href="{{  route('userHome') }}"  class="menu__link r-link text-underlined">Logo</a></li>
             <li class="menu__group"><a href="{{  route('userHome') }}"  class="menu__link r-link text-underlined">Homepage</a></li>
             <li class="menu__group"><a href="{{  route('bookDetails') }}" class="menu__link r-link text-underlined">Books</a></li>
-            <li class="menu__group" style="position:absolute; right:30px; margin-top:-16px"><a href="{{  route('cart') }}"  class="menu__link r-link text-underlined" ><img src="{{ url('/Picture/cart.jpg') }}" width="45px" height="45px" style="margin-bottom: -10px;"/><span class="badge badge-pill badge-danger"><!--{{ count((array) session('cart')) }}</span>--></a></li>
         </nav>
     </div>
-    <div>
+    <div class="page" style="width:20%;">
+        <nav class="page_menu page__custom-settings menu">
+            <ul class="menu__list r-list">
+                <li class="menu__group"><a href="{{  route('bookDetails') }}" class="menu__link r-link text-underlined">Sign In</a></li>
+                <li class="menu__group"><a href="{{ route('cart') }}" class="menu__link r-link text-underlined"><img src="{{url ('/Picture/Shopping Cart.png')}}" width="30px" height="24px"/></a></li>
+        </nav>
+    </div>
+</div>
         @yield('content')
     </div>
     <div class="footer">

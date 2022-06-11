@@ -33,11 +33,11 @@
         }
 
         .Display table{
-            width: 1800px;
+            width: 1500px;
             height: 500px;
             border: 2px solid;
-            margin-left: 50px;
-            margin-bottom: 30px;
+            margin-left: 0.8%;
+            margin-bottom: 2%;]
         }
 
         .Display img{
@@ -65,17 +65,17 @@
         .carousel-inner img {
             width: 480px;
             height: 610px;
-            margin-left: 215px;
+            margin-left: 170px;
         }
 
         .carousel-caption{
-            margin-top: 620px;
+            margin-top: 550px;
         }
 
         .carousel{
-            width: 900px; 
+            width: 800px; 
             height: 760px; 
-            margin-left: 500px; 
+            margin-left: 23%; 
             margin-top: 10px;
             margin-bottom: 5px;
             background-color:rgb(66, 66, 66);
@@ -102,7 +102,7 @@
             </div>
             <div class="carousel-item">
             <img src="{{ url('/Picture/Screenshot 2022-05-20 103621.png') }}">
-            <br><br><br><br><br><br>
+            <br><br><br><br><br><br><br>
             <div class="carousel-caption">
                 <h3>New Release</h3>
                 <p>THE ART OF A LAWYER - CROSS EXAMINATION | ADVOCACY | COURTMANSHIP</p>

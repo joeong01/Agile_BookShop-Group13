@@ -9,16 +9,16 @@
     <style>
         .filter{
             width: 270px;
-            margin-left: 10px;
-            margin-right: 13px;
-            margin-bottom: 13px;
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-bottom: 2%;
             float: left;
         }
 
         .content{
-            width: 1580px;
-            margin-top: 16px;
-            margin-bottom: 17px;
+            width: 79%;
+            margin-top: 1%;
+            margin-bottom: 1%;
             float: left;
         }
 
@@ -28,7 +28,7 @@
         }
 
         table{
-            width: 1580px;
+            width: 100%;
             border: 2px solid;        
         }
 
@@ -44,7 +44,6 @@
             text-align: center;
             border: 2px solid;
         }
-
     </style>
 
 </head>
@@ -128,6 +127,7 @@
     <!-- categories Items - Products -->
     <div class="content">
         <div class="card">
+            <form action="" method="GET">
             <?php
                 if(isset($_GET['categories']))
                 {
@@ -148,6 +148,8 @@
                                     <th>Book Name</th>
                                     <th>Category</th>
                                     <th>Stock Level</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
                                 </tr>
                                 <?php
                                 foreach($products_run as $proditems){
@@ -157,6 +159,8 @@
                                         <th>{{ $proditems['bookName'] }}</th>
                                         <th>{{ $proditems['categoryName'] }}</th>
                                         <th>{{ $proditems['stockLevel'] }}</th>
+                                        <td><a href="http://127.0.0.1:8000/edit_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"></a></td>
+                                        <td><a href="http://127.0.0.1:8000/delete_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a><td>
                                     </tr>
                                     <?php
                                 }
@@ -178,15 +182,20 @@
                                 <th>Book Name</th>
                                 <th>Category</th>
                                 <th>Stock Level</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
                             </tr>
-                        <?php
-                        foreach($products_run as $proditems){
-                            ?>
-                            <tr>
-                                <th>{{ $proditems['ISBN_13']; }}</th>
-                                <th>{{ $proditems['bookName'] }}</th>
-                                <th>{{ $proditems['categoryName'] }}</th>
-                                <th>{{ $proditems['stockLevel'] }}</th>
+                            <?php
+                            foreach($products_run as $proditems){
+                                ?>
+                                
+                                <tr>
+                                    <th>{{ $proditems['ISBN_13']; }}</th>
+                                    <th>{{ $proditems['bookName'] }}</th>
+                                    <th>{{ $proditems['categoryName'] }}</th>
+                                    <th>{{ $proditems['stockLevel'] }}</th>
+                                    <td><a href="http://127.0.0.1:8000/edit_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"></a></td>
+                                    <td><a href="http://127.0.0.1:8000/delete_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a></td>
                             </tr>
                             <?php
                         }
@@ -200,6 +209,7 @@
                     }
                 }
             ?>
+            </form>
         </div>
     </div>
 </div>

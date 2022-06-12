@@ -9,6 +9,8 @@ use App\Http\Controllers\DeleteBookController;
 use App\Http\Controllers\EditBookController;
 use App\Http\Controllers\stockLevelController;
 use App\Http\Controllers\ShoppingCartController;
+use App\Http\Controllers\LoginPageController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,3 +41,6 @@ Route::get('/contactus', ContactController::class)->name('contact_us');
 Route::get('/edit_book', EditBookController::class)->name('edit_book');
 
 Route::get('/delete_book', DeleteBookController::class)->name('delete_book');
+Route::get('/register', RegisterController::class)->name('register');
+
+Route::get('/login', LoginPageController::class)->name('login');

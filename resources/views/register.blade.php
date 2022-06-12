@@ -184,43 +184,7 @@
 
 <body style="background-color: rgb(173, 173, 173);">
     <div id="page-container">
-        <?php
-        /*
-        if (isset($_GET['register'])) {
-            $userID = $_GET['userID'];
-
-            $con = mysqli_connect("localhost", "root", "", "bookstore");
-
-            $search = "SELECT * FROM users WHERE userID=$userID";
-
-            $user_s = mysqli_query($con, $search);
-
-            foreach ($user_s as $userDetails) {
-                $userID =  $userDetails['userID'];
-                $password =  $userDetails['password'];
-            }
-
-            if (array_key_exists('register', $_GET)) {
-                edit_to_database($userID, $password);
-            }
-
-            function edit_to_database($userID, $password)
-            {
-                $userID = $_GET['userID'];
-                $password = $_GET['password'];
-                $userType = "customer";
-
-                $edit = "INSERT INTO users (userID, userType, password)
-                    VALUES ('$userID', '$userType', '$password');";
-
-                if ($con->query($edit) === TRUE) {
-                    header("Location:http://127.0.0.1:8000/userHomepage");
-                    exit();
-                } else {
-                    echo "Error updating record: ";
-                }
-            }
-        }*/
+        <?php       
         $msg = "";
         if (isset($_GET['submit'])) {
             $con = mysqli_connect("localhost", "root", "", "bookstore");

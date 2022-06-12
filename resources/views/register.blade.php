@@ -184,7 +184,7 @@
 
 <body style="background-color: rgb(173, 173, 173);">
     <div id="page-container">
-        <?php       
+        <?php
         $msg = "";
         if (isset($_GET['submit'])) {
             $con = mysqli_connect("localhost", "root", "", "bookstore");
@@ -213,7 +213,7 @@
         }
 
         ?>
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4" style="margin: auto">
             <div class="login-panel panel panel-default">
                 <div class="panel-heading" style="text-align: center;">Register</div>
                 <div class="panel-body">

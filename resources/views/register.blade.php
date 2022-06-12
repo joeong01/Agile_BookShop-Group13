@@ -1,8 +1,8 @@
 {{--
-@if(Auth::user-())
+@if(Auth::user-())--}}
 @extends('userFrame')
- --}}
-@extends('adminFrame')
+
+{{-- @extends('adminFrame') --}}
 @section('content')
 
 <head>
@@ -232,6 +232,8 @@
                             <div class="checkbox">
                                 <button type="submit" value="Register" name="submit" class="btn btn-primary" style="width: 100%;">REGISTER</button><br><br>
                             </div>
+
+                            <p>Already created account?? Click <a href="{{  route('login') }}">here</a> to login account</p>
                         </fieldset>
                     </form>
                 </div>

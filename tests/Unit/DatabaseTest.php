@@ -15,5 +15,7 @@ class DatabaseTest extends TestCase
     public function test_example()
     {
         $this->assertDatabaseHas('book',['ISBN_13'=>'1945673581649']);
+
     }
+
 }

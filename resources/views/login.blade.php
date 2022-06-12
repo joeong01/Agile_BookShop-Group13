@@ -1,8 +1,8 @@
 {{--
-@if(Auth::user-())
+@if(Auth::user-())--}}
 @extends('userFrame')
- --}}
-@extends('adminFrame')
+
+{{-- @extends('adminFrame') --}}
 @section('content')
 
 <head>
@@ -179,9 +179,6 @@
     </style>
 
 </head>
-
-
-
 <body style="background-color: rgb(173, 173, 173);">
     <div id="page-container">
         <?php
@@ -206,7 +203,7 @@
                     header("Location: http://127.0.0.1:8000/user");
                     exit();
                 } else {
-                    header("Location: http://127.0.0.1:8000/about");
+                    header("Location: http://127.0.0.1:8000/admin");
                     exit();
                 }
             } else {
@@ -233,6 +230,8 @@
                             <div class="checkbox">
                                 <button type="submit" value="Login" name="submit" class="btn btn-primary" style="width: 100%;">LOGIN</button><br><br>
                             </div>
+
+                            <p>Haven't create account?? Click <a href="{{  route('register') }}">here</a> to register account</p>
                         </fieldset>
                     </form>
                 </div>

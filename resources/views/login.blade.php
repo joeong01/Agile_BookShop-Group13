@@ -1,127 +1,270 @@
-<?php
-session_start();
-error_reporting(0);
-include('includes/dbconnection.php');
-if (isset($_POST['submit'])) {
-	$name = $_POST['userName'];
-	$email = $_POST['userEmail'];
-	$password = md5($_POST['userPassword']);
-	$phoneNumber = $_POST['userPhoneNumber'];
-
-	$ret = mysqli_query($con, "SELECT userEmail FROM users WHERE userEmail='$email' ");
-	$result = mysqli_fetch_array($ret);
-
-	if ($result > 0) {
-		$msg = "This email is already associated with another account.";
-	} else {
-		//insert new user
-		$query = mysqli_query($con, "INSERT INTO users(userName, userEmail, userPassword,  userPhoneNumber) value('$name', '$email', '$password', '$phoneNumber' )");
-
-		if ($query) {
-			$msg = "You have successfully registered!";
-
-			$sqlGetUserId = mysqli_query($con, "SELECT userID AS id FROM users WHERE userEmail='$email'");
-			$user = mysqli_fetch_assoc($sqlGetUserId);
-			$userID = $user['id'];
-
-			$sqlInsertIncome = mysqli_query($con, "INSERT INTO income_categories(name, position, userID) VALUES('Salary', '1', '$userID'),
-																										   ('Allowance', '2', '$userID'),
-																										   ('Interest Money', '3', '$userID'),
-																										   ('Gift', '4', '$userID'),
-																										   ('Others', '5', '$userID')");
-
-			$sqlInsertExpense = mysqli_query($con, "INSERT INTO expense_categories(name, position, userID) VALUES('Bills', '1', '$userID'),
-																										     ('Groceries', '2', '$userID'),
-																										     ('Restaurants', '3', '$userID'),
-																									  	     ('Movies', '4', '$userID'),
-																										     ('Games', '5', '$userID'),
-																										     ('Home Mortgage', '6', '$userID'),
-																										     ('Rentals', '7', '$userID'),
-																										     ('Parking Fees', '8', '$userID'),
-																										     ('Public Transport', '9', '$userID'),
-																										     ('Pets', '10', '$userID')");
-
-			if ($sqlInsertIncome) {
-				$msg .= "<br/>Default income categories added!";
-			} else {
-				$msg .= "<br/>Failed to add default income categories!";
-			}
-
-			if ($sqlInsertExpense) {
-				$msg .= "<br/>Default expense categories added!";
-			} else {
-				$msg .= "<br/>Failed to add default expense categories!";
-			}
-		} else {
-			$msg = "Something Went Wrong! Please try again";
-		}
-	}
-}
-?>
-
-<!DOCTYPE html>
-<html>
+{{--
+@if(Auth::user-())
+@extends('userFrame')
+ --}}
+@extends('adminFrame')
+@section('content')
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>YourExpenses | Register</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/datepicker3.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	<link rel="icon" type="image/png" href="images/yourexpenses.png" sizes="113x113">
-	<script type="text/javascript">
-		function checkpass() {
-			if (document.register.userPassword.value != document.register.userRepeatPassword.value) {
-				alert('Password and Repeat Password fields do not match');
-				document.register.userRepeatPassword.focus();
-				return false;
-			}
-			return true;
-		}
-	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <style>
+        .about_content {
+            margin: 1%;
+            padding: 1%;
+            padding-left: 2%;
+            padding-right: 2%;
+
+        }
+
+        #page-container {
+            position: relative;
+            min-height: 100px;
+        }
+
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #c2c2c2;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        /* Add a background color when the inputs get focus */
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        button:hover {
+            opacity: 1;
+        }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn,
+        .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container {
+            padding: 16px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: #474e5d;
+            padding-top: 50px;
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;
+            /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+        }
+
+        /* Style the horizontal ruler */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: 35px;
+            top: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #f1f1f1;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #f44336;
+            cursor: pointer;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 300px) {
+
+            .cancelbtn,
+            .signupbtn {
+                width: 100%;
+            }
+        }
+    </style>
+
 </head>
 
-<body>
-	<div class="row">
-		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-			<div class="login-panel panel panel-default">
-				<div class="panel-heading" style="text-align: center;">Register</div>
-				<div class="panel-body">
-					<form role="form" action="" method="post" id="" name="register" onsubmit="return checkpass();">
-						<p style="font-size:16px; color:red" align="center"> <?php if ($msg) {
-																					echo $msg;
-																				}  ?> </p>
-						<fieldset>
-							<div class="form-group">
-								<input type="text" class="form-control" name="userName" placeholder="Name" required="true">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" name="userPhoneNumber" placeholder="Phone Number" maxlength="10" pattern="[0-9]{10}" required="true">
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" name="userEmail" placeholder="Email" required="true">
-							</div>
-							<div class="form-group">
-								<input type="password" class="form-control" name="userPassword" placeholder="Password" required="true">
-							</div>
-							<div class="form-group">
-								<input type="password" class="form-control" name="userRepeatPassword" placeholder="Repeat Password" required="true">
-							</div>
-							<div class="checkbox">
-								<button type="submit" class="btn btn-primary" name="submit" value="submit" style="width: 100%;">REGISTER</button><br><br>
-								<p style="text-align: center;">Already registered? <a href="index.php">Login Now</a></p>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div><!-- /.col-->
-	</div><!-- /.row -->
 
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+
+<body style="background-color: rgb(173, 173, 173);">
+    <div id="page-container">
+        <?php
+        $msg = "";
+        session_start();
+        $con = mysqli_connect("localhost", "root", "", "bookstore");
+        if (isset($_GET['submit'])) {
+            $userID = $_GET['userID'];
+            $password = $_GET['password'];
+            $query = mysqli_query($con, "SELECT userID FROM users WHERE userID='$userID' AND password='$password' ");
+            $ret = mysqli_fetch_array($query);
+
+            $query1 = mysqli_query($con, "SELECT userType FROM users WHERE userID='$userID' AND password='$password' ");
+            $ret1 = mysqli_fetch_array($query1);
+
+            if ($ret > 0) {
+                $_SESSION['uid'] = $ret['userID'];
+                $string1 = $ret1['userType'];
+                $string2 = "customer";
+
+                if (strcmp($string1, $string2) == 0) {
+                    header("Location: http://127.0.0.1:8000/user");
+                    exit();
+                } else {
+                    header("Location: http://127.0.0.1:8000/about");
+                    exit();
+                }
+            } else {
+                $msg = "Invalid Details.";
+            }
+        }
+        ?>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading" style="text-align: center;">Log In</div>
+                <div class="panel-body">
+                    <form role="form" method="GET" id="" name="login">
+                        <p style="font-size:16px; color:red" align="center"> <?php if ($msg) {
+                                                                                    echo $msg;
+                                                                                }  ?> </p>
+                        @csrf
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="userID" name="userID" type="text" autofocus="" required="true">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Password" name="password" type="password" value="" required="true">
+                            </div>
+                            <div class="checkbox">
+                                <button type="submit" value="Login" name="submit" class="btn btn-primary" style="width: 100%;">LOGIN</button><br><br>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div><!-- /.col-->
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 </body>
-
-</html>
+@endsection

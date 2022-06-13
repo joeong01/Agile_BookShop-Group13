@@ -43,16 +43,12 @@
 </head>
 <body style="background-color: rgb(173, 173, 173);">
     <?php
-        if(isset($_GET['userID'])){
-            $userID = $_GET['userID'];
-            $password = $_GET['password'];
 
             $con = mysqli_connect("localhost","root","","bookstore");
 
-            $search = "SELECT * FROM users WHERE userID=$userID";
+            $search = "SELECT * FROM users";
 
-            $user = mysqli_query($con, $search);
-        }  
+            $user = mysqli_query($con, $search); 
     ?>
 
     <div class="home">
@@ -71,7 +67,7 @@
             $userID = $_GET['userID'];
             $password = $_GET['password'];
 
-            $edit = "UPDATE users SET userID='$userID', password='$password';
+            $edit = "UPDATE users SET userID='$userID', password='$password'";
 
             if ($con->query($edit) === TRUE) {
                 header("Location:http://127.0.0.1:8000/login");
@@ -86,8 +82,8 @@
 
     <form method="get">
         <label for="name">Name:</label><br>
-        <input type="text" name="userID" id="userID" value={{ $userID }} readonly><br><br>
-        <label for="name">Paasword:</label><br>
+        <input type="text" name="userID" id="userID" value="{{ $userID }}"><br><br>
+        <label for="name">Password:</label><br>
         <input type="text" name="password" id="password" value='{{ $password }}'><br><br>
 
         <button name="submit_changes">Submit Changes</button>

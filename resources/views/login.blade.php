@@ -184,7 +184,6 @@
     <div id="page-container">
         <?php
         $msg = "";
-        session_start();
         $con = mysqli_connect("localhost", "root", "", "bookstore");
         if (isset($_GET['submit'])) {
             $userID = $_GET['userID'];
@@ -201,7 +200,7 @@
                 $string2 = "customer";
 
                 if (strcmp($string1, $string2) == 0) {
-                    header("Location: http://127.0.0.1:8000/user");
+                    header("Location: http://127.0.0.1:8000/");
                     exit();
                 } else {
                     header("Location: http://127.0.0.1:8000/admin");

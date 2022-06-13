@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class RegisterTest extends TestCase
+class ShoppingCartTest extends TestCase
 {
     /**
      * A basic feature test example.
@@ -15,8 +15,8 @@ class RegisterTest extends TestCase
      */
     public function test_example()
     {
-        $response = $this->get('/register');
+        $response = $this->get('/cart');
 
-        $response->assertStatus(200);
+        $response->assertStatus(500);
     }
 }

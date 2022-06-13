@@ -134,6 +134,17 @@
                     $categorychecked = [];
                     $categorychecked = $_GET['categories'];
 
+                    ?>
+                    <table>
+                        <tr>
+                            <th>ISBN_13</th>
+                            <th>Book Name</th>
+                            <th>Category</th>
+                            <th>Stock Level</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    <?php
                     foreach($categorychecked as $rowcategory)
                     {
                         $products = "SELECT book.ISBN_13, book.bookName, stock.stockLevel, category.categoryName FROM book JOIN stock ON book.ISBN_13 = stock.ISBN_13 JOIN category ON book.bookCategory = category.categoryID Where book.bookCategory IN (\"$rowcategory\") ORDER By ".$_GET['type']." ";
@@ -141,17 +152,6 @@
                         $products_run = mysqli_query($con, $products);
                         if(mysqli_num_rows($products_run) > 0)
                         {
-                            ?>
-                            <table>
-                                <tr>
-                                    <th>ISBN_13</th>
-                                    <th>Book Name</th>
-                                    <th>Category</th>
-                                    <th>Stock Level</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
-                                </tr>
-                                <?php
                                 foreach($products_run as $proditems){
                                     ?>
                                     <tr>
@@ -164,11 +164,11 @@
                                     </tr>
                                     <?php
                                 }
-                                ?>
-                            </table>
-                            <?php
                         }
                     }
+                    ?>
+                    </table>
+                    <?php
                 }
                 else
                 {

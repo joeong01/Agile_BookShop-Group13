@@ -99,7 +99,7 @@
         }
 
         h3{
-            margin-left:80%;
+            margin-left:74%;
         }
     </style>
 </head>
@@ -135,7 +135,7 @@
                                     <th>{{ $proditems['ISBN_13']; }}</th>
                                     <th>{{ $proditems['bookName'] }}</th>
                                     <th>{{ $proditems['categoryName'] }}</th>
-                                    <th>{{ $proditems['retailPrice']}}</th>
+                                    <th>RM{{ $proditems['retailPrice']}}</th>
                                     <td><a href="http://127.0.0.1:8000/edit_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"></a></td>
                                     <td><a href="http://127.0.0.1:8000/delete_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a></td>
                             </tr>
@@ -146,7 +146,7 @@
 
                         </table>
                         <?php
-                        echo "<h3>Total Price :$subtotal</h3>";
+                        echo "<h3>Total Price : RM" .number_format($subtotal,2)."</h3>";
                         ?>
 
     </form>

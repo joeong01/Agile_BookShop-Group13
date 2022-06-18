@@ -5,16 +5,17 @@ namespace Tests\Unit;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class DatabaseTest extends TestCase
+class filterSortingTest extends TestCase
 {
     /**
      * A basic unit test example.
      *
      * @return void
      */
-    public function test_example()
+    public function test_filter_sort()
     {
-        $this->assertDatabaseHas('book',['ISBN_13'=>'1945673581649']);
+        $response = $this->get('/stocklevel');
+        $response->assertStatus(200);
 
     }
 

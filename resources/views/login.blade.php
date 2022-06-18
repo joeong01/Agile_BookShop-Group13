@@ -184,6 +184,7 @@
     <div id="page-container">
         <?php
         $msg = "";
+        session_start();
         $con = mysqli_connect("localhost", "root", "", "bookstore");
         if (isset($_GET['submit'])) {
             $userID = $_GET['userID'];

@@ -75,7 +75,7 @@
                         }
                         ?>
                             <div>
-                                <input type="checkbox" name="categories[]" value="<?= $booklist['categoryID']; ?>" 
+                                <input type="checkbox" name="categories[]" value="<?= $booklist['categoryID']; ?>"
                                     <?php if(in_array($booklist['categoryID'], $checked)){ echo "checked"; } ?>
                                     />
                                 <?= $booklist['categoryName']; ?>
@@ -88,7 +88,7 @@
                     <h6>Sorting</h6>
                     <hr>
                     <h6>ISBN</h6>
-                    <input type="radio" name="type" value="book.ISBN_13 ASC" checked="checked" 
+                    <input type="radio" name="type" value="book.ISBN_13 ASC"
                         <?php if (!empty($_GET['type']) && $_GET['type'] == "book.ISBN_13 ASC"){ echo "checked"; }?>
                     > Ascending
                     <input type="radio" name="type" 
@@ -125,93 +125,54 @@
         </form>
     </div>
     <!-- categories Items - Products -->
+    <?php
+    if(isset($_GET['categories']))
+    {?>
     <div class="content">
         <div class="card">
             <form action="" method="GET">
             <?php
-                if(isset($_GET['categories']))
-                {
-                    $categorychecked = [];
-                    $categorychecked = $_GET['categories'];
+                $categorychecked = [];
+                $categorychecked = $_GET['categories'];
 
-                    ?>
-                    <table>
-                        <tr>
-                            <th>ISBN_13</th>
-                            <th>Book Name</th>
-                            <th>Category</th>
-                            <th>Stock Level</th>
-                            <th>Edit</th>
-                            <th>Delete</th>
-                        </tr>
-                    <?php
-                    foreach($categorychecked as $rowcategory)
-                    {
-                        $products = "SELECT book.ISBN_13, book.bookName, stock.stockLevel, category.categoryName FROM book JOIN stock ON book.ISBN_13 = stock.ISBN_13 JOIN category ON book.bookCategory = category.categoryID Where book.bookCategory IN (\"$rowcategory\") ORDER By ".$_GET['type']." ";
-
-                        $products_run = mysqli_query($con, $products);
-                        if(mysqli_num_rows($products_run) > 0)
-                        {
-                                foreach($products_run as $proditems){
-                                    ?>
-                                    <tr>
-                                        <th>{{ $proditems['ISBN_13']; }}</th>
-                                        <th>{{ $proditems['bookName'] }}</th>
-                                        <th>{{ $proditems['categoryName'] }}</th>
-                                        <th>{{ $proditems['stockLevel'] }}</th>
-                                        <td><a href="http://127.0.0.1:8000/edit_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"></a></td>
-                                        <td><a href="http://127.0.0.1:8000/delete_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a><td>
-                                    </tr>
-                                    <?php
-                                }
-                        }
-                    }
-                    ?>
-                    </table>
-                    <?php
-                }
-                else
+                ?>
+                <table>
+                    <tr>
+                        <th>ISBN_13</th>
+                        <th>Book Name</th>
+                        <th>Category</th>
+                        <th>Stock Level</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                <?php
+                foreach($categorychecked as $rowcategory)
                 {
-                    $products = "SELECT book.ISBN_13, book.bookName, stock.stockLevel, category.categoryName FROM book JOIN stock ON book.ISBN_13 = stock.ISBN_13 JOIN category ON category.categoryID = book.bookCategory ";
+                    $products = "SELECT book.ISBN_13, book.bookName, stock.stockLevel, category.categoryName FROM book JOIN stock ON book.ISBN_13 = stock.ISBN_13 JOIN category ON book.bookCategory = category.categoryID Where book.bookCategory IN (\"$rowcategory\") ORDER By ".$_GET['type']." ";
+
                     $products_run = mysqli_query($con, $products);
                     if(mysqli_num_rows($products_run) > 0)
-                    {?>
-                        <table>
-                            <tr>
-                                <th>ISBN_13</th>
-                                <th>Book Name</th>
-                                <th>Category</th>
-                                <th>Stock Level</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
-                            </tr>
-                            <?php
+                    {
                             foreach($products_run as $proditems){
                                 ?>
-                                
                                 <tr>
                                     <th>{{ $proditems['ISBN_13']; }}</th>
                                     <th>{{ $proditems['bookName'] }}</th>
                                     <th>{{ $proditems['categoryName'] }}</th>
                                     <th>{{ $proditems['stockLevel'] }}</th>
                                     <td><a href="http://127.0.0.1:8000/edit_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"></a></td>
-                                    <td><a href="http://127.0.0.1:8000/delete_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a></td>
-                            </tr>
-                            <?php
-                        }
-                        ?>
-                        </table>
-                    <?php
-                    }
-                    else
-                    {
-                        echo "No Items Found";
+                                    <td><a href="http://127.0.0.1:8000/delete_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a><td>
+                                </tr>
+                                <?php
+                            }
                     }
                 }
-            ?>
+                ?>
+                </table>
             </form>
         </div>
     </div>
+    <?php }?>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -219,4 +180,4 @@
 
 </body>
 
-@endsection
+@endsection 

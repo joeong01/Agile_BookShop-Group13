@@ -43,12 +43,13 @@
 </head>
 <body style="background-color: rgb(173, 173, 173);">
     <?php
-
+    
             $con = mysqli_connect("localhost","root","","bookstore");
 
-            $search = "SELECT * FROM users";
+            $search = "SELECT * FROM users WHERE userID=$userID";
 
-            $user = mysqli_query($con, $search); 
+            $user = mysqli_query($con, $search);
+        
     ?>
 
     <div class="home">

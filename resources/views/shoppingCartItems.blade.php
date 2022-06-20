@@ -99,7 +99,7 @@
         }
 
         h3{
-            margin-left:74%;
+            margin-left:76%;
         }
     </style>
 </head>
@@ -112,6 +112,7 @@
     <?php
 
             $con = mysqli_connect("localhost","root","","bookstore");
+            $quantity=1;
             $subtotal=0;
 
     $products = "SELECT book.ISBN_13, book.bookName, category.categoryName, book.retailPrice FROM book JOIN category ON category.categoryID = book.bookCategory ";
@@ -123,9 +124,8 @@
                                 <th>ISBN_13</th>
                                 <th>Book Name</th>
                                 <th>Category</th>
+                                <th>Quantity</th>
                                 <th>Price</th>
-                                <th>Edit</th>
-                                <th>Delete</th>
                             </tr>
                             <?php
                             foreach($products_run as $proditems){
@@ -135,12 +135,12 @@
                                     <th>{{ $proditems['ISBN_13']; }}</th>
                                     <th>{{ $proditems['bookName'] }}</th>
                                     <th>{{ $proditems['categoryName'] }}</th>
+                                    <th><button type = "button" name = "minus" class ="button">-</button>{{ $quantity }}<button type = "button" name= "plus" class = "button">+</button></th>
                                     <th>RM{{ $proditems['retailPrice']}}</th>
-                                    <td><a href="http://127.0.0.1:8000/edit_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"></a></td>
-                                    <td><a href="http://127.0.0.1:8000/delete_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a></td>
                             </tr>
                             <?php
-                            $subtotal+=$proditems['retailPrice'];
+                            $ttlprodPrice = $quantity * $proditems['retailPrice'];
+                            $subtotal+=$ttlprodPrice;
                         }
                     }?>
 

@@ -271,6 +271,7 @@
                 <li class="menu__group"><a href="{{ route('adminHome') }}" class="menu__link r-link text-underlined">Logo</a></li>
                 <li class="menu__group"><a href="{{ route('adminHome') }}" class="menu__link r-link text-underlined">Homepage</a></li>
                 <li class="menu__group"><a href="{{ route('stockLevel') }}" class="menu__link r-link text-underlined">Stock Level</a></li>
+                <li class="menu__group"><a href="{{  route('logout') }}" class="menu__link r-link text-underlined">Log Out</a></li>
             </ul>
         </nav>
     </div> 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use App\Product;
 use Illuminate\Support\Facades\DB;
@@ -24,4 +25,5 @@ class LoginPageController extends Controller
     public function create(){
         return ('login.create');
     }
+
 }

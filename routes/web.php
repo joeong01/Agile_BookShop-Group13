@@ -11,6 +11,7 @@ use App\Http\Controllers\EditUserController;
 use App\Http\Controllers\stockLevelController;
 use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\LoginPageController;
+use App\Http\Controllers\LogOutController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
@@ -48,3 +49,5 @@ Route::get('/delete_book', DeleteBookController::class)->name('delete_book');
 Route::get('/register', RegisterController::class)->name('register');
 
 Route::get('/login', LoginPageController::class)->name('login');
+
+Route::get('/logout',LogOutController::class)->name('logout');

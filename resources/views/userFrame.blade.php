@@ -279,20 +279,17 @@
     <div class="page" style="width:20%;">
         <nav class="page_menu page__custom-settings menu">
             <ul class="menu__list r-list">
-            <?php
-                    session_start();
-                //if($_SESSION['uid'] != null){
-                    
-                   // <li class="menu__group"><a href="{{  route('userHome') }}" class="menu__link r-link text-underlined">Log Out</a></li>
-?>
                 <?php
-                //}
-                //else{
+                    session_start();
+                if(session()->get('type') == "none"){
                 ?>
                     <li class="menu__group"><a href="{{  route('login') }}" class="menu__link r-link text-underlined">Sign In</a></li>
-                    <?php
-                //}
-            ?>
+                 <?php
+                }
+                else{
+                    ?>
+                    <li class="menu__group"><a href="{{  route('logout') }}" class="menu__link r-link text-underlined">Log Out</a></li>
+                <?php }?>
                 <li class="menu__group"><a href="{{  route('cart') }}" class="menu__link r-link text-underlined"><img src="{{url ('/Picture/Shopping Cart.png')}}" width="30px" height="24px"/></a></li>
         </nav>
     </div>

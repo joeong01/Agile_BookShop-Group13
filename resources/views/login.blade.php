@@ -1,8 +1,4 @@
-{{--
-@if(Auth::user-())--}}
 @extends('userFrame')
-
-{{-- @extends('adminFrame') --}}
 @section('content')
 
 <head>
@@ -182,6 +178,7 @@
 
 <body style="background-color: rgb(173, 173, 173);">
     <div id="page-container">
+        
         <?php
         $msg = "";
         $con = mysqli_connect("localhost", "root", "", "bookstore");
@@ -195,11 +192,14 @@
             $ret1 = mysqli_fetch_array($query1);
 
             if ($ret > 0) {
-                $_SESSION['uid'] = $ret['userID'];
+                session(['id' => $userID]);
+                session(['type' => "none"]);
                 $string1 = $ret1['userType'];
                 $string2 = "customer";
 
                 if (strcmp($string1, $string2) == 0) {
+                    session(['type' => "user"]);
+                    Session::save();
                     header("Location: http://127.0.0.1:8000/");
                     exit();
                 } else {

@@ -12,7 +12,9 @@ use App\Http\Controllers\stockLevelController;
 use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\LoginPageController;
 use App\Http\Controllers\LogOutController;
+use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PaymentHistoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,4 +52,8 @@ Route::get('/register', RegisterController::class)->name('register');
 
 Route::get('/login', LoginPageController::class)->name('login');
 
-Route::get('/logout',LogOutController::class)->name('logout');
+Route::get('/logout', LogOutController::class)->name('logout');
+
+Route::get('/transaction', TransactionController::class)->name('transaction');
+
+Route::get('/paymentHistory', PaymentHistoryController::class)->name('paymentHistory');

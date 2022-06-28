@@ -274,13 +274,20 @@
             <li class="menu__group"><a href="{{  route('userHome') }}"  class="menu__link r-link text-underlined">Logo</a></li>
             <li class="menu__group"><a href="{{  route('userHome') }}"  class="menu__link r-link text-underlined">Homepage</a></li>
             <li class="menu__group"><a href="{{  route('bookDetails') }}" class="menu__link r-link text-underlined">Books</a></li>
+            <?php
+            session_start();
+            if(session()->get('type') != "none"){
+                ?>
+                <li class="menu__group"><a href="{{  route('paymentHistory') }}" class="menu__link r-link text-underlined">Payment History</a></li>
+            <?php
+            }
+            ?>
         </nav>
     </div>
     <div class="page" style="width:20%;">
         <nav class="page_menu page__custom-settings menu">
             <ul class="menu__list r-list">
                 <?php
-                    session_start();
                 if(session()->get('type') == "none"){
                 ?>
                     <li class="menu__group"><a href="{{  route('login') }}" class="menu__link r-link text-underlined">Sign In</a></li>

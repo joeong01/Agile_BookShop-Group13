@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About us</title>
+    <title>Payment</title>
 
     <style>
         .contact_content{
@@ -47,8 +47,8 @@
 <body style="background-color: gainsboro;">
     <div id="page-container">    
         <div class='contact_content'>
-            <h1>Contact Us</h1>
-            <h4>Have a question to ask us? Fill up the form below to contact us.</h4><br>
+            <h1>Payment</h1>
+            <h4>Your total amount is: "amount"</h4><br>
 
             <form>
                 <label for="fname">First Name:</label><br>

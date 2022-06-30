@@ -274,34 +274,29 @@
             <li class="menu__group"><a href="{{  route('userHome') }}"  class="menu__link r-link text-underlined">Logo</a></li>
             <li class="menu__group"><a href="{{  route('userHome') }}"  class="menu__link r-link text-underlined">Homepage</a></li>
             <li class="menu__group"><a href="{{  route('bookDetails') }}" class="menu__link r-link text-underlined">Books</a></li>
+            <?php
+            session_start();
+            if(session()->get('type') != "none"){
+                ?>
+                <li class="menu__group"><a href="{{  route('paymentHistory') }}" class="menu__link r-link text-underlined">Payment History</a></li>
+            <?php
+            }
+            ?>
         </nav>
     </div>
     <div class="page" style="width:20%;">
         <nav class="page_menu page__custom-settings menu">
             <ul class="menu__list r-list">
-<<<<<<< Updated upstream
-            <?php
-                    session_start();
-                //if($_SESSION['uid'] != null){
-                    
-                   // <li class="menu__group"><a href="{{  route('userHome') }}" class="menu__link r-link text-underlined">Log Out</a></li>
-?>
                 <?php
-                //}
-                //else{
+                if(session()->get('type') == "none"){
                 ?>
                     <li class="menu__group"><a href="{{  route('login') }}" class="menu__link r-link text-underlined">Sign In</a></li>
-                    <?php
-                //}
-            ?>
-=======
-                @if(Auth::user-()){
-                 <li class="menu__group"><a href="{{  route('login') }}" class="menu__link r-link text-underlined">Sign In</a></li>
+                 <?php
                 }
-                @else{
-                    <li class="menu__group"><a href="{{  route('login') }}" class="menu__link r-link text-underlined">Sign In</a></li>
-                }
->>>>>>> Stashed changes
+                else{
+                    ?>
+                    <li class="menu__group"><a href="{{  route('logout') }}" class="menu__link r-link text-underlined">Log Out</a></li>
+                <?php }?>
                 <li class="menu__group"><a href="{{  route('cart') }}" class="menu__link r-link text-underlined"><img src="{{url ('/Picture/Shopping Cart.png')}}" width="30px" height="24px"/></a></li>
         </nav>
     </div>

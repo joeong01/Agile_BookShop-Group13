@@ -136,7 +136,7 @@
             <tr>
                 <th>Original Price : RM<s>310.00</s> RM 260.00</th>
                 <th>Price : RM<s>350.00</s> RM 300.00</th>
-            </tr>   
+            </tr> 
         </table>
     </div>
 </body>

@@ -28,6 +28,12 @@
             padding: 5px;
             margin-bottom: 5px; 
         }
+
+        input[name=cvv]{
+            width: 5%;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
         
         input[type=submit]{
             width: 100px;
@@ -47,20 +53,41 @@
 <body style="background-color: gainsboro;">
     <div id="page-container">    
         <div class='contact_content'>
+            <?php
+                if(isset($_GET['submit'])){
+            ?>
+            
+            <h1>Payment</h1>
+            <h4>Your payment has been completed.</h4><br>
+
+            <?php
+                }
+                else{
+            ?>
+
             <h1>Payment</h1>
             <h4>Your total amount is: "amount"</h4><br>
 
             <form>
-                <label for="fname">First Name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last Name:</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="inquiry">Your inquiry:</label><br>
-                <textarea style="resize: none" id="inquiry" name="inquiry"></textarea><br>
-                <input type="submit" value="Submit">
+                <label for="cname">Cardholder Name:</label><br>
+                <input type="text" id="cname" name="cname"><br>
+                <label for="cardname">Card Number:</label><br>
+                <input type="text" id="cardName" name="cardName"><br>
+                <label for="cvv">CVV:</label><br>
+                <input type="text" id="cvv" name="cvv"><br>
+                <label for="cvv">Card type:</label><br>
+                <input type="radio" id="visa" name="cardType" value="visa">
+                <label for="id">VISA</label><br>
+                <input type="radio" id="mastercard" name="cardType" value="mastercard">
+                <label for="id">Mastercard</label><br>
+                <label for="epdate">Expiration Date:</label><br>
+                <input type="text" id="epdate" name="epdate"><br>
+                <input type="submit" name="submit" value="Submit">
             </form>
+
+            <?php
+                }
+            ?>
 
         </div>
     </div>

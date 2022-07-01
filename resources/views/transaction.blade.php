@@ -45,6 +45,7 @@
 </head>
 
 <body  style="background-color: rgb(173, 173, 173);">
+    /display all the transaction history 
     <div id="page-container">
         <div class="about_content">   
         @foreach ($payment as $row)

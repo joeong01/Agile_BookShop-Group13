@@ -13,11 +13,23 @@ class ExampleTest extends DuskTestCase
      *
      * @return void
      */
-    public function testBasicExample()
+    public function testRegisterPage()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/register')
                 ->assertSee('Register');
+        });
+    }
+
+    public function testRegisterFunction()
+    {
+        $this->browse(function (Browser $browser) {
+            $browser->visit('/register')
+                ->assertSee('Register')
+                ->type('userID', 'test1')
+                ->type('password', 'testing1')
+                ->press('submit')
+                ->assertPathIs('/register');
         });
     }
 }

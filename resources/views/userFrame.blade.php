@@ -266,6 +266,8 @@
             margin-bottom: 0;
         }
     </style>
+    <link rel="icon" type="image/x-icon" href="{{url ('/Picture/head_logo.png')}}">
+
 </head>
 
 <body style="background-color: rgb(173, 173, 173);">

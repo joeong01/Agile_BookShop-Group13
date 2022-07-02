@@ -265,13 +265,15 @@
             margin-bottom: 0;
         }
     </style>
+
+    <link rel="icon" type="image/x-icon" href="{{url ('/Picture/head_logo.png')}}">
 </head>
 
 <body>
     <div class="page">
         <nav class="page__menu page__custom-settings menu">
             <ul class="menu__list r-list">
-                <li class="menu__group"><a href="{{ route('adminHome') }}" class="menu__link r-link text-underlined">Logo</a></li>
+                <li class="menu__group"><a href="{{ route('adminHome') }}" class="menu__link r-link text-underlined"><img src="{{url ('/Picture/logo.png')}}" width="35px" height="24px" /></a></li>
                 <li class="menu__group"><a href="{{ route('adminHome') }}" class="menu__link r-link text-underlined">Homepage</a></li>
                 <li class="menu__group"><a href="{{ route('stockLevel') }}" class="menu__link r-link text-underlined">Stock Level</a></li>
                 <li class="menu__group"><a href="{{ route('transaction') }}" class="menu__link r-link text-underlined">Transaction</a></li>

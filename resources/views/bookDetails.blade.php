@@ -94,33 +94,37 @@
     <div class="small-container single-product">
         <div class="row">
             <div class="col-2">
-                <img src="{{ url('/Picture/Screenshot 2022-05-20 104415.png') }}" width="100%" id="ProductImg">
-<!--
-                <div class="small-img-row">
-                    <div class="small-img-col">
-                        <img src="images/Empty1.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="images/Empty2.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="images/Empty3.jpg" width="100%" class="small-img">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="images/Empty4.jpg" width="100%" class="small-img">
-                    </div>
-                </div>-->
+            <?php
+            // $id = $_GET['ISBN_13'];
 
+            $db = mysqli_connect("localhost","root","","bookstore");
+            $sql= "SELECT * FROM book ";
+            $sth = $db->query($sql);
+            $result = mysqli_fetch_array($sth);
+            
+
+            ?>
+            @foreach ($books as $row)
+                <!-- {{$row->bookCover}} -->
+                <!-- echo '<image src="data:image/jpeg;base64,'.base64_encode($result['bookCover']).'"/>'; -->
+                <!-- <?php
+                echo '<image src="data:image/jpeg;base64,'.base64_encode(?>{{$row->bookCover}}<?php).'"/>';
+                ?> -->
+                <h1>{{$row->bookName}}</h1>
+                <h4>RM {{$row->tradePrice}}</h4>
+                <br>
+            @endforeach
+
+            
             </div>
             <div class="col-2">
-                <p>Home / Books</p>
-                <h1>Modern Advocancy</h1>
-                <h4>RM30</h4>
+                <!-- <p>Home / Books</p> -->
+                
                 <!-- <input type="number" value="1"> -->
-                <h3>Product Details <i class="fa fa-ident"></i></h3>
+                <!-- <h3>Product Details <i class="fa fa-ident"></i></h3>
                 <th>By :Elearnor Wong, Lok Vi Ming,<br> The Honourable Justice Vinodh Coomaraswamy</th>
-                <br>
-                <a href="" class="btn" style="color: black">Add To Cart</a>
+                <br> -->
+                <!-- <a href="" class="btn" style="color: black">Add To Cart</a> -->
                 <!-- <p>Empty Book, A-Z</p> -->
             </div>
         </div>

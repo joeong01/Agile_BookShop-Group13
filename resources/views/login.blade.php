@@ -178,7 +178,7 @@
 
 <body style="background-color: rgb(173, 173, 173);">
     <div id="page-container">
-
+        
         <?php
         $msg = "";
         $con = mysqli_connect("localhost", "root", "", "bookstore");

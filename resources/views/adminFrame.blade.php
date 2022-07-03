@@ -270,7 +270,6 @@
 </head>
 
 <body>
-    {{-- Header --}}
     <div class="page">
         <nav class="page__menu page__custom-settings menu">
             <ul class="menu__list r-list">
@@ -282,11 +281,9 @@
             </ul>
         </nav>
     </div>
-    {{-- Content --}}
     <div>
         @yield('content')
     </div>
-    {{-- Footer --}}
     <div class="footer">
         <footer>
             <div class="social">

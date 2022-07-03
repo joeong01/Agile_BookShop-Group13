@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About us</title>
+    <title>Register</title>
 
     <style>
         .about_content {
@@ -185,6 +185,7 @@
 <body style="background-color: rgb(173, 173, 173);">
     <div id="page-container">
         <?php
+        //run if submit button is being clicked
         $msg = "";
         if (isset($_GET['submit'])) {
             $con = mysqli_connect("localhost", "root", "", "bookstore");
@@ -194,6 +195,7 @@
             $ret = mysqli_query($con, "SELECT userID FROM users WHERE userID='$userID' ");
             $result = mysqli_fetch_array($ret);
 
+            //check the user id occupied?
             if ($result > 0) {
                 $msg = "This user ID is already associated with another account.";
             } else {
@@ -201,6 +203,7 @@
                 $query = mysqli_query($con, "INSERT INTO users(userID, userType, password) value('$userID', 'customer', '$password')");
 
                 if ($query) {
+                    //display message
                     $msg = "You have successfully registered!";
 
                     $sqlGetUserId = mysqli_query($con, "SELECT userID AS id FROM users WHERE userID='$userID'");
@@ -217,10 +220,16 @@
             <div class="login-panel panel panel-default">
                 <div class="panel-heading" style="text-align: center;">Register</div>
                 <div class="panel-body">
+                    <!--register form-->
                     <form role="form" method="GET" id="" name="register">
-                        <p style="font-size:16px; color:red" align="center"> <?php if ($msg) {
-                                                                                    echo $msg;
-                                                                                }  ?> </p>
+                        <p style="font-size:16px; color:red" align="center">
+                            <?php
+                            //display message
+                            if ($msg) {
+                                echo $msg;
+                            }
+                            ?>
+                        </p>
                         @csrf
                         <fieldset>
                             <div class="form-group">
@@ -232,7 +241,7 @@
                             <div class="checkbox">
                                 <button type="submit" value="Register" name="submit" class="btn btn-primary" style="width: 100%;">REGISTER</button><br><br>
                             </div>
-
+                            <!--direct to login page if the user have an account-->
                             <p>Already created account?? Click <a href="{{  route('login') }}">here</a> to login account</p>
                         </fieldset>
                     </form>

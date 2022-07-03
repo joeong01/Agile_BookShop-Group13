@@ -303,15 +303,11 @@
 
 <body style="background-color: rgb(173, 173, 173);">
     <div class="home" style="background-color:whitesmoke">
-
-
-        <!-- single product details -->
-
         <div class="row">
             <div class="col">
-                <!-- Modal -->
                 <div id="bookDetailsBtn">
                     <?php
+                    //retrieve data from book selected in product page
                     $bookISBN_13 = "";
                     if (isset($_GET['submit'])) {
                         $bookISBN_13 = $_GET['ISBN_13'];
@@ -319,6 +315,7 @@
 
                     $con = mysqli_connect("localhost", "root", "", "bookstore");
 
+                    //select specific book data
                     $search = "SELECT * FROM book WHERE ISBN_13= '$bookISBN_13'";
 
                     $result = mysqli_query($con, $search);
@@ -330,14 +327,12 @@
 
                             <section id="services" class="services section-bg">
                                 <form action="/action_page.php" method="post">
-
                                     <div class="container-fluid">
                                         <div class="row row-sm">
                                             <div class="col-md-4 _boxzoom">
                                                 <div class="_product-images">
                                                     <div class="picZoomer">
                                                         <?php echo '<image src="data:image/jpeg;base64,' . base64_encode($row['bookCover']) . '"/>'; ?>
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -371,12 +366,10 @@
                                                         <ul class="spe_ul"></ul>
                                                         <div class="_p-qty-and-cart">
                                                             <div class="_p-add-cart">
+                                                                <!--shopping cart button-->
                                                                 <button class="btn-theme btn btn-success" tabindex="0">
                                                                     <i class="fa fa-shopping-cart"></i> Add to Cart
                                                                 </button>
-                                                                <input type="hidden" name="pid" value="18" />
-                                                                <input type="hidden" name="price" value="850" />
-                                                                <input type="hidden" name="url" value="" />
                                                             </div>
                                                         </div>
                                                     </div>
@@ -386,15 +379,13 @@
                                     </div>
                                 </form>
                             </section>
-                </div><!-- /.modal -->
-
+                </div>
             </div>
     <?php
                         }
                     }
     ?>
 
-    <!-- js for toggle menu -->
     <script>
         var MenuItems = document.getElementById("MenuItems");
         MenuItems, style.maxHeight = "0px";

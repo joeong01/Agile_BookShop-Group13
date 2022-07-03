@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserHomeController;
 use App\Http\Controllers\bookDetailsController;
+use App\Http\Controllers\bookDetailsBuyController;
 use App\Http\Controllers\DeleteBookController;
 use App\Http\Controllers\EditBookController;
 use App\Http\Controllers\EditUserController;
@@ -33,6 +34,7 @@ Route::get('/admin', AdminHomeController::class)->name('adminHome');
 Route::get('/', UserHomeController::class)->name('userHome');
 
 Route::get('/bookdetails', bookDetailsController::class)->name('bookDetails');
+Route::get('/bookdetailsbuy', bookDetailsBuyController::class)->name('bookDetailsBuy');
 
 Route::get('/cart', ShoppingCartController::class)->name('cart');
 

@@ -1,0 +1,21 @@
+<?php
+
+namespace Tests\Unit;
+
+use Tests\TestCase;
+
+class filterSortingTest extends TestCase
+{
+    /**
+     * A basic unit test example.
+     *
+     * @return void
+     */
+    public function test_filter_sort()
+    {
+        $response = $this->get('/stocklevel');
+        $response->assertStatus(200);
+
+    }
+
+}

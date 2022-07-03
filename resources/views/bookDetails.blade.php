@@ -303,15 +303,9 @@
 
 <body style="background-color: rgb(173, 173, 173);">
     <div class="home">
-
-
-        <!-- single product details -->
-
         <div class="row">
             <div class="col">
                 <?php
-                // $id = $_GET['ISBN_13'];
-
                 //put in server address, then username, then password, then database name
                 $db = mysqli_connect("localhost", "root", "", "bookstore");
                 $sql = "SELECT * FROM book ";
@@ -319,6 +313,7 @@
                 $isbn13 = "SELECT ISBN_13 FROM book";
                 ?>
 
+                <!--display book details-->
                 @foreach ($books as $row)
                 <form role="form" method="GET" action="{{  route('bookDetailsBuy') }}" id="details" name="details">
                     <?php
@@ -329,21 +324,19 @@
                     <h4>RM {{$row->tradePrice}}</h4>
 
 
-                    <!-- <button>Add To Cart</button> -->
-
-                    <!-- button popup book's details -->
+                    <!--show the book details page for specific book selected-->
                     <input type='hidden' id='btnISBN_13' name='ISBN_13' value={{$row->ISBN_13}}>
                     <button style="width:auto;" type="submit" name="submit">Details</button>
                     <br>
                     <br>
                 </form>
-                @endforeach               
+                @endforeach
 
             </div>
 
 
             <!-- js for toggle menu -->
-            <script>                
+            <script>
                 var MenuItems = document.getElementById("MenuItems");
                 MenuItems, style.maxHeight = "0px";
 
@@ -357,34 +350,6 @@
 
                 // Get the modal
                 var modal = document.getElementById('bookDetailsBtn');
-
-                // // When the user clicks anywhere outside of the modal, close it
-                // window.onclick = function(event) {
-                //     if (event.target == modal) {
-                //         modal.style.display = "none";
-                //     }
-                // }
-
-                const plus = document.querySelector(".plus"),
-                    minus = document.querySelector(".minus"),
-                    num = document.querySelector(".num");
-
-                let a = 1;
-
-                plus.addEventListener("click", () => {
-                    a++;
-                    a = (a < 10) ? "0" + a : a;
-                    num.innerText = a;
-                    console.log("a");
-                })
-
-                minus.addEventListener("click", () => {
-                    if (a > 1) {
-                        a--;
-                        a = (a < 10) ? "0" + a : a;
-                        num.innerText = a;
-                    }
-                })
             </script>
 
             <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

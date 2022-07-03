@@ -86,9 +86,7 @@
                 echo "Error updating record: ";
             }
         }
-    ?>
-
-    
+    ?>    
 
     <form method="get">
         <label for="name">ISBN:</label><br>

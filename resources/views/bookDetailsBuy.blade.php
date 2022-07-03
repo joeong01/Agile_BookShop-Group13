@@ -368,19 +368,17 @@
                                                             <span> Book Description:</span>
                                                             {{$row['bookDescription']}}
                                                         </div>
-                                                        <form action="" method="post" accept-charset="utf-8">
-                                                            <ul class="spe_ul"></ul>
-                                                            <div class="_p-qty-and-cart">
-                                                                <div class="_p-add-cart">
-                                                                    <button class="btn-theme btn btn-success" tabindex="0">
-                                                                        <i class="fa fa-shopping-cart"></i> Add to Cart
-                                                                    </button>
-                                                                    <input type="hidden" name="pid" value="18" />
-                                                                    <input type="hidden" name="price" value="850" />
-                                                                    <input type="hidden" name="url" value="" />
-                                                                </div>
+                                                        <ul class="spe_ul"></ul>
+                                                        <div class="_p-qty-and-cart">
+                                                            <div class="_p-add-cart">
+                                                                <button class="btn-theme btn btn-success" tabindex="0">
+                                                                    <i class="fa fa-shopping-cart"></i> Add to Cart
+                                                                </button>
+                                                                <input type="hidden" name="pid" value="18" />
+                                                                <input type="hidden" name="price" value="850" />
+                                                                <input type="hidden" name="url" value="" />
                                                             </div>
-                                                        </form>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

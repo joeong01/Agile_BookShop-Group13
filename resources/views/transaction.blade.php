@@ -45,6 +45,7 @@
 </head>
 
 <body  style="background-color: rgb(173, 173, 173);">
+    /display all the transaction history 
     <div id="page-container">
         <div class="about_content">   
         @foreach ($payment as $row)
@@ -57,6 +58,7 @@
         @endforeach
         </div>
     </div>
+    /script that allow user to click on the payment ID to showmore detail
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;

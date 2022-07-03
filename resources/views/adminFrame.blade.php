@@ -272,6 +272,7 @@
 <body>
     <div class="page">
         <nav class="page__menu page__custom-settings menu">
+            <!--top navigation bar-->
             <ul class="menu__list r-list">
                 <li class="menu__group"><a href="{{ route('adminHome') }}" class="menu__link r-link text-underlined"><img src="{{url ('/Picture/logo.png')}}" width="35px" height="24px" /></a></li>
                 <li class="menu__group"><a href="{{ route('adminHome') }}" class="menu__link r-link text-underlined">Homepage</a></li>
@@ -286,6 +287,7 @@
     </div>
     <div class="footer">
         <footer>
+            <!--footer-->
             <div class="social">
                 <a href="https://www.instagram.com/" target="_blank"><i class="icon ion-social-instagram"></i></a>
                 <a href="https://www.snapchat.com/" target="_blank"><i class="icon ion-social-snapchat"></i></a>

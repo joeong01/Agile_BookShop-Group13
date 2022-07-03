@@ -149,6 +149,8 @@
                         echo "<h3>Total Price : RM" .number_format($subtotal,2)."</h3>";
                         ?>
 
+                        <button type = "button" name = "purchase" class = "button">Purchase</button>
+
     </form>
 </div>
 </body>

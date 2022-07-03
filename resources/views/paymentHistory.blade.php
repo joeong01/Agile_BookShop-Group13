@@ -75,6 +75,7 @@
         @endforeach
         </div>
     </div>
+    /script that allow user to click on the payment ID to showmore detail
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;

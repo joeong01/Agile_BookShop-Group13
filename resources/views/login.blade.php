@@ -178,8 +178,9 @@
 
 <body style="background-color: rgb(173, 173, 173);">
     <div id="page-container">
-        
+
         <?php
+        //check data for login
         $msg = "";
         $con = mysqli_connect("localhost", "root", "", "bookstore");
         if (isset($_GET['submit'])) {
@@ -215,10 +216,14 @@
             <div class="login-panel panel panel-default">
                 <div class="panel-heading" style="text-align: center;">Log In</div>
                 <div class="panel-body">
+                    <!--login form-->
                     <form role="form" method="GET" id="" name="login">
-                        <p style="font-size:16px; color:red" align="center"> <?php if ($msg) {
-                                                                                    echo $msg;
-                                                                                }  ?> </p>
+                        <p style="font-size:16px; color:red" align="center">
+                            <?php
+                            //display error message if any
+                            if ($msg) {
+                                echo $msg;
+                            }  ?> </p>
                         @csrf
                         <fieldset>
                             <div class="form-group">
@@ -230,7 +235,7 @@
                             <div class="checkbox">
                                 <button type="submit" value="Login" name="submit" class="btn btn-primary" style="width: 100%;">LOGIN</button><br><br>
                             </div>
-
+                            <!--direct to register page if user not register-->
                             <p>Haven't create account?? Click <a href="{{  route('register') }}">here</a> to register account</p>
                         </fieldset>
                     </form>

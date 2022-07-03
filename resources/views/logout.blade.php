@@ -1,14 +1,13 @@
+@if( session()->get('type') == "user"){
 
-    @if( session()->get('type') == "user"){
-    
-        @extends('userFrame')
-        @section('content')
-    }
-    @else{
-        @extends('adminFrame')
-        @section('content')
-    }
-    @endif
+@extends('userFrame')
+@section('content')
+}
+@else{
+@extends('adminFrame')
+@section('content')
+}
+@endif
 
 <head>
     <meta charset="UTF-8">
@@ -17,12 +16,13 @@
 </head>
 
 <body>
-    <?php 
-        session(['id' => "none"]);
-        session(['type' => "none"]);
-        Session::save();
-        header("Location: http://127.0.0.1:8000/");
-        exit();
+    <?php
+    //clear session
+    session(['id' => "none"]);
+    session(['type' => "none"]);
+    Session::save();
+    header("Location: http://127.0.0.1:8000/");
+    exit();
     ?>
 </body>
 

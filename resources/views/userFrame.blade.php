@@ -271,6 +271,7 @@
 </head>
 
 <body style="background-color: rgb(173, 173, 173);">
+    {{-- Header --}}
     <div class="float-container">
         <div class="page" style="width:80%;">
             <nav class="page__menu page__custom-settings menu">
@@ -282,6 +283,7 @@
                     session_start();
                     if (session()->get('type') != "none") {
                     ?>
+                    {{-- if user log in allow user to check their payment history --}}
                         <li class="menu__group"><a href="{{  route('paymentHistory') }}" class="menu__link r-link text-underlined">Payment History</a></li>
                     <?php
                     }
@@ -292,20 +294,25 @@
             <nav class="page_menu page__custom-settings menu">
                 <ul class="menu__list r-list">
                     <?php
-                    if (session()->get('type') == "none") {
+                    if (session()->get('type') == "none" || session()->has('type') ) {
                     ?>
+                        {{-- if user not log in allow user to logIn or Register --}}
                         <li class="menu__group"><a href="{{  route('login') }}" class="menu__link r-link text-underlined">Sign In</a></li>
                     <?php
                     } else {
                     ?>
+                        {{-- if user log in allow user to log out --}}
                         <li class="menu__group"><a href="{{  route('logout') }}" class="menu__link r-link text-underlined">Log Out</a></li>
                     <?php } ?>
                     <li class="menu__group"><a href="{{  route('cart') }}" class="menu__link r-link text-underlined"><img src="{{url ('/Picture/Shopping Cart.png')}}" width="30px" height="24px" /></a></li>
             </nav>
         </div>
     </div>
+    {{-- Content --}}
+    <div>
     @yield('content')
     </div>
+    {{-- Footer --}}
     <div class="footer">
         <footer>
             <div class="social">

@@ -46,9 +46,12 @@
 <body>
     <div id="page-container">
         <div class="about_content"> 
+            {{-- use loop to display all history of current log in user --}}
         @foreach ($history as $row)
+        {{-- display payment ID and Date as title --}}
             <button type="button" class="collapsible">Payment ID: {{ $row->invoiceID }}, Date: {{ $row->invoiceDate }}</button>
                 <div class="content">
+                    {{-- after usre click on the title it will show more detail about the payment history --}}
                     <p>Total Price: {{ $row->totalPrice }}</p>
                     <p>Address: {{ $row->postageAddress }}</p>
                     <?php
@@ -75,7 +78,7 @@
         @endforeach
         </div>
     </div>
-    /script that allow user to click on the payment ID to showmore detail
+    {{-- script that allow user to click on the payment ID to showmore detail --}}
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;

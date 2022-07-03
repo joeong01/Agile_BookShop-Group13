@@ -53,14 +53,16 @@
         <form action="" method="GET">
             <div class="card shadow mt-3">
                 <div class="card-header">
-                    <h5>filter and Sort 
-                        <button type="submit" class="btn btn-primary btn-sm float-end">Search</button>
+                    {{-- A search button as submit --}}
+                    <h5>Filter and Sort 
+                        <button type="submit" name="submit" class="btn btn-primary btn-sm float-end">Search</button>
                     </h5>
                 </div>
                 <div class="card-body">
                     <h6>Category List</h6>
                     <hr>
                     <?php
+                    // connect to database to retrive the data based on admin selected value
                     $con = mysqli_connect("localhost","root","","bookstore");
 
                     $book = "SELECT * FROM category";
@@ -75,6 +77,7 @@
                         }
                         ?>
                             <div>
+                                {{-- CHeckbox for admin to choose categories--}}
                                 <input type="checkbox" name="categories[]" value="<?= $booklist['categoryID']; ?>"
                                     <?php if(in_array($booklist['categoryID'], $checked)){ echo "checked"; } ?>
                                     />
@@ -88,6 +91,7 @@
                     <h6>Sorting</h6>
                     <hr>
                     <h6>ISBN</h6>
+                    {{-- Let admin choose which type of oder to sort --}}
                     <input type="radio" name="type" value="book.ISBN_13 ASC"
                         <?php if (!empty($_GET['type']) && $_GET['type'] == "book.ISBN_13 ASC"){ echo "checked"; }?>
                     > Ascending
@@ -112,14 +116,6 @@
                     <input type="radio" name="type" 
                         <?php if (!empty($_GET['type']) && $_GET['type'] == "stock.stockLevel DESC"){ echo "checked"; }?>
                     value="stock.stockLevel DESC"> Descending 
-
-                    <br><br>
-                    <h6>Category</h6>
-                    <input type="radio" name="category" value="category.categoryName ASC"> Ascending
-                        <?php if (!empty($_GET['type']) && $_GET['type'] == "category.categoryName ASC"){ echo "checked"; }?>
-                    <input type="radio" name="category" 
-                        <?php if (!empty($_GET['type']) && $_GET['type'] == "category.categoryName DESC"){ echo "checked"; }?>
-                    value="category.categoryName DESC"> Descending 
                 </div>
             </div>
         </form>

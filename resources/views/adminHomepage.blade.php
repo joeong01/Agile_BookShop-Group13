@@ -16,14 +16,16 @@
         array("label"=>"Romance", "y"=>0),
         array("label"=>"Education", "y"=>0));
     
+        // count low stock
     foreach ($totalStock as $row){
         if ( $row->stockLevel < 20){
             $lowStock += 1;   
         }
     }
-
+    // cunt total book
     $totalBook = count($totalStock);
 
+    //save the number book of the category
     foreach($categories as $row) {
         $value[$x] = $row->book;
         $x++;
@@ -70,10 +72,12 @@
 <body style="background-color: rgb(173, 173, 173);" >
     
     <table class="Display" style="margin-left: 22%;margin-top: 1%;margin-bottom: 1% ">
+        {{-- display total book and low stock--}}
         <tr style="height: 100px">
             <th>Total of Books : {{ $totalBook }}</th>
             <th>Books that are low stock : <span style="color: red;"">{{ $lowStock }} </span></th>
         </tr>
+        {{-- display the graph --}}
         <tr>
             <td colspan="2">
                 <div id="categories" style="height: 600px; width: 900px;"></div>
@@ -82,6 +86,7 @@
         </tr>
     </table>
 </body>
+{{-- create cart with script --}}
 <script> 
     window.onload = function() {
         var category = new CanvasJS.Chart("categories", {

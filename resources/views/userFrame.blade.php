@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Book Booking System</title>
+    <title>Book Store</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -273,6 +273,7 @@
 <body style="background-color: rgb(173, 173, 173);">
     <div class="float-container">
         <div class="page" style="width:80%;">
+            <!--navigation bar-->
             <nav class="page__menu page__custom-settings menu">
                 <ul class="menu__list r-list">
                     <li class="menu__group"><a href="{{  route('userHome') }}" class="menu__link r-link text-underlined"><img src="{{url ('/Picture/logo.png')}}" width="35px" height="24px" /></a></li>
@@ -308,6 +309,7 @@
     </div>
     <div class="footer">
         <footer>
+            <!--footer-->
             <div class="social">
                 <a href="https://www.instagram.com/" target="_blank"><i class="icon ion-social-instagram"></i></a>
                 <a href="https://www.snapchat.com/" target="_blank"><i class="icon ion-social-snapchat"></i></a>

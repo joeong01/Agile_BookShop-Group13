@@ -302,7 +302,7 @@
 </head>
 
 <body style="background-color: rgb(173, 173, 173);">
-    <div class="home">
+    <div class="home" style="background-color:whitesmoke">
 
 
         <!-- single product details -->
@@ -343,7 +343,7 @@
                                             </div>
                                             <div class="col-md-7">
                                                 <div class="_product-detail-content">
-                                                    <p class="_p-name">Book Name: {{$row['bookName']}}</p>
+                                                    <h3>{{$row['bookName']}}</h3>
                                                     <div class="_p-price-box">
                                                         <div class="p-list">
                                                             <span> Price (RM): <i class="fa fa-inr"></i></span>
@@ -368,19 +368,17 @@
                                                             <span> Book Description:</span>
                                                             {{$row['bookDescription']}}
                                                         </div>
-                                                        <form action="" method="post" accept-charset="utf-8">
-                                                            <ul class="spe_ul"></ul>
-                                                            <div class="_p-qty-and-cart">
-                                                                <div class="_p-add-cart">
-                                                                    <button class="btn-theme btn btn-success" tabindex="0">
-                                                                        <i class="fa fa-shopping-cart"></i> Add to Cart
-                                                                    </button>
-                                                                    <input type="hidden" name="pid" value="18" />
-                                                                    <input type="hidden" name="price" value="850" />
-                                                                    <input type="hidden" name="url" value="" />
-                                                                </div>
+                                                        <ul class="spe_ul"></ul>
+                                                        <div class="_p-qty-and-cart">
+                                                            <div class="_p-add-cart">
+                                                                <button class="btn-theme btn btn-success" tabindex="0">
+                                                                    <i class="fa fa-shopping-cart"></i> Add to Cart
+                                                                </button>
+                                                                <input type="hidden" name="pid" value="18" />
+                                                                <input type="hidden" name="price" value="850" />
+                                                                <input type="hidden" name="url" value="" />
                                                             </div>
-                                                        </form>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

@@ -4,17 +4,18 @@ namespace Tests\Unit;
 
 use Tests\TestCase;
 
-class TransactionTest extends TestCase
+class filterSortingTest extends TestCase
 {
     /**
      * A basic unit test example.
      *
      * @return void
-     */    
-    public function test_transaction()
+     */
+    public function test_filter_sort()
     {
-        $response = $this->get('/transaction');
-
+        $response = $this->get('/stocklevel');
         $response->assertStatus(200);
+
     }
+
 }

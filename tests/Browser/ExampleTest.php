@@ -13,23 +13,19 @@ class ExampleTest extends DuskTestCase
      *
      * @return void
      */
-    public function testRegisterPage()
+    public function testPaymentFunction()
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('/register')
-                ->assertSee('Register');
-        });
-    }
+            $browser->visit('/payment')
+                    ->assertSee('Payment')
+                    ->type('cname', 'Name')
+                    ->type('cardNum', '1234567890123456')
+                    ->type('ccv', '345')
+                    ->radio('cardType', 'visa')
+                    ->type('epdate','12/12')
+                    ->press('submit')
+                    ->assertPathIs('/payment');
 
-    public function testRegisterFunction()
-    {
-        $this->browse(function (Browser $browser) {
-            $browser->visit('/register')
-                ->assertSee('Register')
-                ->type('userID', 'test1')
-                ->type('password', 'testing1')
-                ->press('submit')
-                ->assertPathIs('/register');
         });
     }
 }

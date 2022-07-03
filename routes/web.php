@@ -13,6 +13,7 @@ use App\Http\Controllers\stockLevelController;
 use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\LoginPageController;
 use App\Http\Controllers\LogOutController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\PaymentHistoryController;
@@ -59,3 +60,5 @@ Route::get('/logout', LogOutController::class)->name('logout');
 Route::get('/transaction', TransactionController::class)->name('transaction');
 
 Route::get('/paymentHistory', PaymentHistoryController::class)->name('paymentHistory');
+
+Route::get('/payment', PaymentController::class)->name('payment');

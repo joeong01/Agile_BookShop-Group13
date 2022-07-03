@@ -302,7 +302,7 @@
 </head>
 
 <body style="background-color: rgb(173, 173, 173);">
-    <div class="home">
+    <div class="home" style="background-color:whitesmoke">
 
 
         <!-- single product details -->
@@ -343,7 +343,7 @@
                                             </div>
                                             <div class="col-md-7">
                                                 <div class="_product-detail-content">
-                                                    <p class="_p-name">Book Name: {{$row['bookName']}}</p>
+                                                    <h3>{{$row['bookName']}}</h3>
                                                     <div class="_p-price-box">
                                                         <div class="p-list">
                                                             <span> Price (RM): <i class="fa fa-inr"></i></span>

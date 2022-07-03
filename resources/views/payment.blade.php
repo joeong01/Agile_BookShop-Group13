@@ -65,8 +65,6 @@
 
                 $con = mysqli_connect("localhost","root","","bookstore");
 
-                $subtotal=0;
-
                 $search = "SELECT * FROM shoppingcart WHERE userID='$id'";
 
                 $results = mysqli_query($con, $search);

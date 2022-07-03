@@ -11,11 +11,21 @@ class PaymentHistoryTest extends TestCase
      *
      * @return void
      */    
-    public function test_paymentHistory()
+    public function test_retreive_data()
     {
-        session(['id' => "123"]);
-        $response = $this->get('/paymentHistory');
+        
+        $con = mysqli_connect("localhost", "root", "", "bookstore");
 
-        $response->assertStatus(302);
+        $products = "SELECT * FROM invoice where userID = 123";
+        $products_run = mysqli_query($con, $products);
+        $products_try = mysqli_fetch_array($products_run);
+
+        if ($products_try > 0) {
+            $boolean = true;
+        } else {
+            $boolean = false;
+        }
+
+        $this->assertTrue($boolean);
     }
 }

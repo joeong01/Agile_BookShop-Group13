@@ -61,6 +61,20 @@
         <div class='contact_content'>
             <h1>Payment</h1>
             <?php
+                $id = session()->get('id', '0');
+
+                $con = mysqli_connect("localhost","root","","bookstore");
+
+                $subtotal=0;
+
+                $search = "SELECT * FROM shoppingcart WHERE userID='$id'";
+
+                $results = mysqli_query($con, $search);
+
+                foreach($results as $result){
+                    $amount = $result['totalPrice'];
+                }
+
                 $valid = true;
                 //if the form is submited
                 if(isset($_GET['submit'])){
@@ -114,7 +128,7 @@
                 else{
             ?>
                 <h4>Your payment is incomplete.</h4><br>
-                <h4>Your total amount is: "amount"</h4><br>
+                <h4>Your total amount is: RM{{ $amount }}</h4><br>
 
             <form>
                 <label for="cname">Cardholder Name:</label><br>
@@ -139,7 +153,7 @@
             else{
             ?>
 
-            <h4>Your total amount is: "amount"</h4><br>
+            <h4>Your total amount is: RM{{ $amount }}</h4><br>
 
             <form>
                 <label for="cname">Cardholder Name:</label><br>

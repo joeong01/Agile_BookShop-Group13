@@ -79,57 +79,76 @@
             background-color:rgb(66, 66, 66);
             padding-top: 10px;
        }
+
+       table{
+            width: 100%;
+            border: 2px solid;        
+        }
+
+        td{
+            font-size: 17px;
+            padding-top: 1px;
+            border: 2px solid;
+        }
+
+        th{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-align: center;
+            border: 2px solid;
+        }
+
+        h3{
+            margin-left:74%;
+        }
     </style>
 </head>
 <body>
 
 <div class="cart content-wrapper">
+<div class="content">
     <h1>Shopping Cart</h1>
-    <form action="index.php?page=cart" method="post">
-        <table>
-            <thead>
-                <tr>
-                    <td colspan="2">Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Total</td>
-                </tr>
-            </thead>
-            <tbody>
-                <?php if (empty($products)): ?>
-                <tr>
-                    <td colspan="5" style="text-align:center;">You have no products added in your Shopping Cart</td>
-                </tr>
-                <?php else: ?>
-                <?php foreach ($products as $product): ?>
-                <tr>
-                    <td class="img">
-                        <a href="index.php?page=product&id=<?=$product['id']?>">
-                            <img src="imgs/<?=$product['img']?>" width="50" height="50" alt="<?=$product['name']?>">
-                        </a>
-                    </td>
-                    <td>
-                        <a href="index.php?page=product&id=<?=$product['id']?>"><?=$product['name']?></a>
-                        <br>
-                        <a href="index.php?page=cart&remove=<?=$product['id']?>" class="remove">Remove</a>
-                    </td>
-                    <td class="price">&dollar;<?=$product['price']?></td>
-                    <td class="quantity">
-                        <input type="number" name="quantity-<?=$product['id']?>" value="<?=$products_in_cart[$product['id']]?>" min="1" max="<?=$product['quantity']?>" placeholder="Quantity" required>
-                    </td>
-                    <td class="price">&dollar;<?=$product['price'] * $products_in_cart[$product['id']]?></td>
-                </tr>
-                <?php endforeach; ?>
-                <?php endif; ?>
-            </tbody>
-        </table>
-        <div class="subtotal">
-            <span class="text">Subtotal</span>
-        </div>
-        <div class="buttons">
-            <input type="submit" value="Update" name="update">
-            <input type="submit" value="Place Order" name="placeorder">
-        </div>
+    <form method="GET">
+    <?php
+
+            $con = mysqli_connect("localhost","root","","bookstore");
+            $subtotal=0;
+
+    $products = "SELECT book.ISBN_13, book.bookName, category.categoryName, book.retailPrice FROM book JOIN category ON category.categoryID = book.bookCategory ";
+                    $products_run = mysqli_query($con, $products);
+                    if(mysqli_num_rows($products_run) > 0){
+                    ?>
+                        <table>
+                            <tr>
+                                <th>ISBN_13</th>
+                                <th>Book Name</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                            <?php
+                            foreach($products_run as $proditems){
+                                ?>
+                                
+                                <tr>
+                                    <th>{{ $proditems['ISBN_13']; }}</th>
+                                    <th>{{ $proditems['bookName'] }}</th>
+                                    <th>{{ $proditems['categoryName'] }}</th>
+                                    <th>RM{{ $proditems['retailPrice']}}</th>
+                                    <td><a href="http://127.0.0.1:8000/edit_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/edit.png') }}" width="50px" height="50px"></a></td>
+                                    <td><a href="http://127.0.0.1:8000/delete_book?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a></td>
+                            </tr>
+                            <?php
+                            $subtotal+=$proditems['retailPrice'];
+                        }
+                    }?>
+
+                        </table>
+                        <?php
+                        echo "<h3>Total Price : RM" .number_format($subtotal,2)."</h3>";
+                        ?>
+
     </form>
 </div>
 </body>

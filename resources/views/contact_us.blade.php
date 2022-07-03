@@ -1,51 +1,53 @@
-{{-- 
+{{--
 @if(Auth::user-())
 @extends('userFrame')
  --}}
- @extends('adminFrame')
- @section('content')
+@extends('adminFrame')
+@section('content')
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About us</title>
+    <title>Contact us</title>
 
     <style>
-        .contact_content{
+        .contact_content {
             margin: 1%;
             padding: 1%;
             padding-left: 4%;
             padding-right: 2%;
         }
-        
-        #page-container{
+
+        #page-container {
             position: relative;
             min-height: 100px;
         }
 
-        input[type=text]{
+        input[type=text] {
             width: 25%;
             padding: 5px;
-            margin-bottom: 5px; 
+            margin-bottom: 5px;
         }
-        
-        input[type=submit]{
+
+        input[type=submit] {
             width: 100px;
             padding: 5px;
             margin-top: 5px;
-            margin-bottom: 5px; 
+            margin-bottom: 5px;
         }
 
-        textarea[id=inquiry]{
+        textarea[id=inquiry] {
             width: 35%;
             height: 250px;
         }
-
     </style>
 
 </head>
+
 <body style="background-color: gainsboro;">
-    <div id="page-container">    
+    <div id="page-container">
+        <!--enquiry form-->
         <div class='contact_content'>
             <h1>Contact Us</h1>
             <h4>Have a question to ask us? Fill up the form below to contact us.</h4><br>

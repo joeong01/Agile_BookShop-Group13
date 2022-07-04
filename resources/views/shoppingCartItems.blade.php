@@ -147,8 +147,12 @@
                         </table>
                         <?php
                         echo "<h3>Total Price : RM" .number_format($subtotal,2)."</h3>";
+
+
+                        //button to take user to payment page
                         ?>
 
+                        
                         <button type = "button" name = "purchase" class = "button">Purchase</button>
 
     </form>

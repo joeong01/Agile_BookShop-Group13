@@ -198,8 +198,12 @@ foreach($results as $result){
                                     <th>RM{{ $proditems['retailPrice']}}</th>
                             </tr>
                             <?php
-                            $ttlprodPrice = $quantity * $proditems['retailPrice'];
+                            $ttlprodPrice = $proditems['retailPrice'];
                             $subtotal+=$ttlprodPrice;
+
+                            $updatePrice = "UPDATE shoppingcart SET totalPrice=$subtotal WHERE cartID=$cartID"; 
+                            $updatePriceQuery = mysqli_query($con, $updatePrice);
+
                         }
                     }?>
 

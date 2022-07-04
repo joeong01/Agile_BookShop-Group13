@@ -323,41 +323,15 @@
                         // output data of each row
                         while ($row = mysqli_fetch_assoc($result)) {
 
-                    ?>
-
-                    <?php
                         //run if add button is being clicked
                         
-                        $id = session()->get('id') ;
-
-                        $cartID = mysqli_query($con, "SELECT cartID FROM shoppingcart WHERE userID = $id");
-
-                        $msg = "";
-                        if (isset($_GET['add_button'])) {
                         
-                            $product = mysqli_query($con, "SELECT shoppingcartdetails.ISBN_13 FROM shoppingcartdetails JOIN book ON shoppingcartdetails.ISBN_13 = book.ISBN_13");
-
-                            $fetch = mysqli_fetch_array($product);
-
-                            if ($fetch > 0) {
-                                $msg = "Item already added to cart.";
-                            } else {
-                                //insert product
-                                $query = mysqli_query($con, "INSERT INTO shoppingcartdetails(cartID, ISBN_13) VALUE('$cartID', 'book.ISBN_13)' ");
-                
-                                if ($query) {
-                                    //display message
-                                    $msg = "Added to cart!";
-                                } else {
-                                    $msg = "Something Went Wrong! Please try again";
-                                }
-                            }
-                        }
 
                     ?>
 
                             <section id="services" class="services section-bg">
-                                <form action="/action_page.php" method="post">
+                                <form role="form" action={{ route('cart') }} method="GET"  id="" name="add_book">
+                                    
                                     <div class="container-fluid">
                                         <div class="row row-sm">
                                             <div class="col-md-4 _boxzoom">
@@ -375,13 +349,7 @@
                                                             <span> Price (RM): <i class="fa fa-inr"></i></span>
                                                             <span class="price"> {{$row['tradePrice']}}</span>
                                                         </div>
-                                                        <div class="_p-add-cart">
-                                                            <div class="_p-qty">
-                                                                <span>Add Quantity:
-                                                                    <input type="number" name="qty" id="number" value="1" min="1" />
-                                                                </span>
-                                                            </div>
-                                                        </div>
+                                                        
                                                         <div class="_p-features">
                                                             <span>Author: </span>
                                                             {{$row['author']}}
@@ -394,11 +362,13 @@
                                                             <span> Book Description:</span>
                                                             {{$row['bookDescription']}}
                                                         </div>
+                    <input type='hidden' id='btnISBN_13' name='ISBN_13' value={{ $bookISBN_13}}>
+
                                                         <ul class="spe_ul"></ul>
                                                         <div class="_p-qty-and-cart">
                                                             <div class="_p-add-cart">
                                                                 <!--shopping cart button-->
-                                                                <button class="btn-theme btn btn-success" tabindex="0" name = "add_button">
+                                                                <button class="btn-theme btn btn-success" tabindex="0" name = "add_button" type="submit">
                                                                     <i class="fa fa-shopping-cart"></i> Add to Cart
                                                                 </button>
                                                             </div>

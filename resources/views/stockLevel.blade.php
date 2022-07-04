@@ -114,15 +114,6 @@
                                                             echo "checked";
                                                         } ?> value="stock.stockLevel DESC"> Descending
 
-                        <br><br>
-                        <h6>Category</h6>
-                        <input type="radio" name="category" value="category.categoryName ASC"> Ascending
-                        <?php if (!empty($_GET['type']) && $_GET['type'] == "category.categoryName ASC") {
-                            echo "checked";
-                        } ?>
-                        <input type="radio" name="category" <?php if (!empty($_GET['type']) && $_GET['type'] == "category.categoryName DESC") {
-                                                                echo "checked";
-                                                            } ?> value="category.categoryName DESC"> Descending
                     </div>
                 </div>
             </form>

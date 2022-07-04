@@ -305,6 +305,7 @@
             </nav>
         </div>
     </div>
+    <div>
     @yield('content')
     </div>
     <div class="footer">

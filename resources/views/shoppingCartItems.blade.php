@@ -132,7 +132,7 @@ foreach($results as $result){
 
             //$product = mysqli_query($con, "SELECT shoppingcartdetails.ISBN_13 FROM shoppingcartdetails JOIN book ON shoppingcartdetails.ISBN_13 = book.ISBN_13");
 
-            $fetch = mysqli_fetch_array($product);
+            //$fetch = mysqli_fetch_array($product);
 
             
                 //insert product

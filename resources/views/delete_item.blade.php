@@ -107,8 +107,8 @@
 
 <?php
     //load if the id is not empty
-    if (isset($_GET['ISBN_13'])) {
-        $isbn = $_GET['ISBN_13'];
+    if (isset($_GET['id'])) {
+        $isbn = $_GET['id'];
 
         $con = mysqli_connect("localhost", "root", "", "bookstore");
 

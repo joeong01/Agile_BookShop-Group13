@@ -55,6 +55,7 @@
     <div class="home">
 
     <?php
+    //Edit user password function
         foreach($user as $users){
             $userID =  $users['userID'];
             $password =  $users['password'];
@@ -65,10 +66,10 @@
         }
 
         function edit_to_database($userID, $con){
-            $userID = $_GET['userID'];
+            $userID = session()->get('id');
             $password = $_GET['password'];
 
-            $edit = "UPDATE users SET userID='$userID', password='$password'";
+            $edit = "UPDATE users SET password='$password' WHERE userID = $userID";
 
             if ($con->query($edit) === TRUE) {
                 header("Location:http://127.0.0.1:8000/login");
@@ -79,11 +80,13 @@
         }
     ?>
 
-    
+    <?php
+        $user
+    ?>
 
     <form method="get">
         <label for="name">Name:</label><br>
-        <input type="text" name="userID" id="userID" value="{{ $userID }}"><br><br>
+        <input type="text" name="userID" id="userID" value="{{ $userID }} "readonly><br><br>
         <label for="name">Password:</label><br>
         <input type="text" name="password" id="password" value='{{ $password }}'><br><br>
 

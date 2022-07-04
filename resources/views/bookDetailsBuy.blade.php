@@ -325,6 +325,37 @@
 
                     ?>
 
+                    <?php
+                        //run if add button is being clicked
+                        
+                        $id = session()->get('id') ;
+
+                        $cartID = mysqli_query($con, "SELECT cartID FROM shoppingcart WHERE userID = $id");
+
+                        $msg = "";
+                        if (isset($_GET['add_button'])) {
+                        
+                            $product = mysqli_query($con, "SELECT shoppingcartdetails.ISBN_13 FROM shoppingcartdetails JOIN book ON shoppingcartdetails.ISBN_13 = book.ISBN_13");
+
+                            $fetch = mysqli_fetch_array($product);
+
+                            if ($fetch > 0) {
+                                $msg = "Item already added to cart.";
+                            } else {
+                                //insert product
+                                $query = mysqli_query($con, "INSERT INTO shoppingcartdetails(cartID, ISBN_13) VALUE('$cartID', 'book.ISBN_13)' ");
+                
+                                if ($query) {
+                                    //display message
+                                    $msg = "Added to cart!";
+                                } else {
+                                    $msg = "Something Went Wrong! Please try again";
+                                }
+                            }
+                        }
+
+                    ?>
+
                             <section id="services" class="services section-bg">
                                 <form action="/action_page.php" method="post">
                                     <div class="container-fluid">
@@ -367,7 +398,7 @@
                                                         <div class="_p-qty-and-cart">
                                                             <div class="_p-add-cart">
                                                                 <!--shopping cart button-->
-                                                                <button class="btn-theme btn btn-success" tabindex="0">
+                                                                <button class="btn-theme btn btn-success" tabindex="0" name = "add_button">
                                                                     <i class="fa fa-shopping-cart"></i> Add to Cart
                                                                 </button>
                                                             </div>

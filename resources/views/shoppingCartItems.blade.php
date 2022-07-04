@@ -106,11 +106,65 @@
 <body>
 
 <div class="cart content-wrapper">
+
+    <?php
+    //add
+                    $con = mysqli_connect("localhost", "root", "", "bookstore");
+
+        $id = session()->get('id') ;
+
+$results = mysqli_query($con, "SELECT cartID FROM shoppingcart WHERE userID = $id");
+
+foreach($results as $result){
+                    $cartID = $result['cartID'];
+                }
+
+
+        $msg = "";
+        if (isset($_GET['add_button'])) {
+            $isbn = $_GET['ISBN_13'];
+
+            //$product = mysqli_query($con, "SELECT shoppingcartdetails.ISBN_13 FROM shoppingcartdetails JOIN book ON shoppingcartdetails.ISBN_13 = book.ISBN_13");
+
+            $fetch = mysqli_fetch_array($product);
+
+            
+                //insert product
+                $query = mysqli_query($con, "INSERT INTO shoppingcartdetails(cartID, ISBN_13) VALUE($cartID, $isbn) ");
+
+                if ($query) {
+                    //display message
+                    $msg = "Added to cart!";
+                } else {
+                    $msg = "Something Went Wrong! Please try again";
+                }
+            
+        }
+        ?>
+
+
+
 <div class="content">
     <h1>Shopping Cart</h1>
+    
     <form method="GET">
+        <p style="font-size:16px; color:red" align="center">
+            <?php
+            //display message
+            if ($msg) {
+                echo $msg;
+            }
+            ?>
+        </p>
+        <table>
+            <tr>
+                <th>ISBN_13</th>
+                <th>Book Name</th>
+                <th>Price</th>
+            </tr>
     <?php
-
+            $products = "";
+            //connect to database
             $con = mysqli_connect("localhost","root","","bookstore");
             $quantity=1;
             $subtotal=0;
@@ -119,20 +173,21 @@
             $id = session()->get('id') ;
 
             //Check cartID is linked with userID
-            $cartID = mysqli_query($con, "SELECT cartID FROM shoppingcart WHERE userID = $id");
+            $query = mysqli_query($con, "SELECT cartID FROM shoppingcart WHERE userID = '$id'");
 
+            foreach($query as $result){
+                    $cartID= $result['cartID'];
+                }
+                ?>
+                
+                            <?php
             //Get book details from book database
-            $products = "SELECT shoppingcartdetails.ISBN_13, book.bookName, book.retailPrice FROM shoppingcartdetails JOIN book ON shoppingcartdetails.ISBN_13 = book.ISBN_13 AND shoppingcartdetails.cartID = $cartID";
+            $products = "SELECT shoppingcartdetails.ISBN_13, book.bookName, book.retailPrice FROM shoppingcartdetails JOIN book ON shoppingcartdetails.ISBN_13 = book.ISBN_13 AND shoppingcartdetails.cartID = $cartID";            
+
                     $products_run = mysqli_query($con, $products);
                     if(mysqli_num_rows($products_run) > 0){
-                    ?>
-                        <table>
-                            <tr>
-                                <th>ISBN_13</th>
-                                <th>Book Name</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                            </tr>
+                    ?>  
+                        <!-- display table -->
                             <?php
                             foreach($products_run as $proditems){
                                 ?>
@@ -140,7 +195,6 @@
                                 <tr>
                                     <th>{{ $proditems['ISBN_13']; }}</th>
                                     <th>{{ $proditems['bookName'] }}</th>
-                                    <th><button type = "button" name = "minus" class ="button">-</button>{{ $quantity }}<button type = "button" name= "plus" class = "button">+</button></th>
                                     <th>RM{{ $proditems['retailPrice']}}</th>
                             </tr>
                             <?php
@@ -151,13 +205,12 @@
 
                         </table>
                         <?php
+                        //display price
                         echo "<h3>Total Price : RM" .number_format($subtotal,2)."</h3>";
 
 
                         //button to take user to payment page
-                        ?>
-
-                        
+                        ?>                       
                         <button type = "button" name = "purchase" class = "button" ><a href={{ route('payment') }}>Purchase</a></button>
     </form>
 </div>

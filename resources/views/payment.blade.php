@@ -2,7 +2,7 @@
 @if (Auth::user-())
 @extends('userFrame')
  --}}
- @extends('adminFrame')
+ @extends('userFrame')
  @section('content')
 <head>
     <meta charset="UTF-8">
@@ -157,10 +157,10 @@
 
             <h4>Your total amount is: RM{{ $amount }}</h4><br>
 
-           <!-- <h6>Order details:</h6><br>-->
+            <h6>Order details:</h6>
                 
         <?php
-               /* $products = "";
+               $products = "";
                 //connect to database
                 $con = mysqli_connect("localhost","root","","bookstore");
                 $quantity=1;
@@ -184,7 +184,7 @@
                         $products_run = mysqli_query($con, $products);
                         if(mysqli_num_rows($products_run) > 0){
                         ?>  
-                        <table style="position:static">
+                        <table style="display:contents">
                             <tr>
                                 <th>ISBN_13</th>
                                 <th>Book Name</th>
@@ -201,8 +201,9 @@
                                         <th>RM{{ $proditems['retailPrice']}}</th>
                                 </tr>
                                 <?php                              
-                            }
-                        }*/?>
+                            }?>
+                            </table>
+                       <?php }?>
 
             <form>
                 <label for="cname">Cardholder Name:</label><br>

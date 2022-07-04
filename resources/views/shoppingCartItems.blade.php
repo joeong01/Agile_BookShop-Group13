@@ -196,6 +196,7 @@ foreach($results as $result){
                                     <th>{{ $proditems['ISBN_13']; }}</th>
                                     <th>{{ $proditems['bookName'] }}</th>
                                     <th>RM{{ $proditems['retailPrice']}}</th>
+                                    <td><a href="http://127.0.0.1:8000/delete_item?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a>
                             </tr>
                             <?php
                             $ttlprodPrice = $quantity * $proditems['retailPrice'];

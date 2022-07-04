@@ -58,8 +58,11 @@
 </head>
 <body style="background-color: gainsboro;">
     <div id="page-container">    
+        
         <div class='contact_content'>
             <h1>Payment</h1>
+            
+            
             <?php
                 $id = session()->get('id', '0');
 
@@ -154,6 +157,53 @@
 
             <h4>Your total amount is: RM{{ $amount }}</h4><br>
 
+           <!-- <h6>Order details:</h6><br>-->
+                
+        <?php
+               /* $products = "";
+                //connect to database
+                $con = mysqli_connect("localhost","root","","bookstore");
+                $quantity=1;
+                $subtotal=0;
+    
+                //Get current session ID
+                $id = session()->get('id') ;
+    
+                //Check cartID is linked with userID
+                $query = mysqli_query($con, "SELECT cartID FROM shoppingcart WHERE userID = '$id'");
+    
+                foreach($query as $result){
+                        $cartID= $result['cartID'];
+                    }
+                    ?>
+                    
+                                <?php
+                //Get book details from book database
+                $products = "SELECT shoppingcartdetails.ISBN_13, book.bookName, book.retailPrice FROM shoppingcartdetails JOIN book ON shoppingcartdetails.ISBN_13 = book.ISBN_13 AND shoppingcartdetails.cartID = $cartID";            
+    
+                        $products_run = mysqli_query($con, $products);
+                        if(mysqli_num_rows($products_run) > 0){
+                        ?>  
+                        <table style="position:static">
+                            <tr>
+                                <th>ISBN_13</th>
+                                <th>Book Name</th>
+                                <th>Price</th>
+                            </tr>
+                            <!-- display table -->
+                                <?php
+                                foreach($products_run as $proditems){
+                                    ?>
+                                    
+                                    <tr>
+                                        <th>{{ $proditems['ISBN_13']; }}</th>
+                                        <th>{{ $proditems['bookName'] }}</th>
+                                        <th>RM{{ $proditems['retailPrice']}}</th>
+                                </tr>
+                                <?php                              
+                            }
+                        }*/?>
+
             <form>
                 <label for="cname">Cardholder Name:</label><br>
                 <input type="text" id="cname" name="cname"><br>
@@ -174,6 +224,8 @@
             <?php
                 }
             ?>
+
+        
 
         </div>
     </div>

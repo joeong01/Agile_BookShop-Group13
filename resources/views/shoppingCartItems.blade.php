@@ -199,8 +199,12 @@ foreach($results as $result){
                                     <td><a href="http://127.0.0.1:8000/delete_item?id={{ $proditems['ISBN_13'] }}"><img src="{{ url('/Picture/delete.png') }}" width="50px" height="50px"></a>
                             </tr>
                             <?php
-                            $ttlprodPrice = $quantity * $proditems['retailPrice'];
+                            $ttlprodPrice = $proditems['retailPrice'];
                             $subtotal+=$ttlprodPrice;
+
+                            $updatePrice = "UPDATE shoppingcart SET totalPrice=$subtotal WHERE cartID=$cartID"; 
+                            $updatePriceQuery = mysqli_query($con, $updatePrice);
+
                         }
                     }?>
 

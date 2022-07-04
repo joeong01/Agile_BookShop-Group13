@@ -100,16 +100,15 @@
             $db = mysqli_connect("localhost","root","","bookstore");
             $sql= "SELECT * FROM book ";
             $sth = $db->query($sql);
-            $result = mysqli_fetch_array($sth);
-            
 
             ?>
             @foreach ($books as $row)
                 <!-- {{$row->bookCover}} -->
                 <!-- echo '<image src="data:image/jpeg;base64,'.base64_encode($result['bookCover']).'"/>'; -->
-                <!-- <?php
-                echo '<image src="data:image/jpeg;base64,'.base64_encode(?>{{$row->bookCover}}<?php).'"/>';
-                ?> -->
+                <?php
+                $result = mysqli_fetch_array($sth);
+                echo '<image src="data:image/jpeg;base64,'.base64_encode($result['bookCover']).'"/>';?>
+
                 <h1>{{$row->bookName}}</h1>
                 <h4>RM {{$row->tradePrice}}</h4>
                 <br>

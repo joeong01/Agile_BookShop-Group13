@@ -115,7 +115,7 @@
             $quantity=1;
             $subtotal=0;
 
-    $products = "SELECT book.ISBN_13, book.bookName, category.categoryName, book.retailPrice FROM book JOIN category ON category.categoryID = book.bookCategory ";
+    $products = "SELECT book.bookName, category.categoryName, book.retailPrice FROM book JOIN category ON category.categoryID = book.bookCategory ";
                     $products_run = mysqli_query($con, $products);
                     if(mysqli_num_rows($products_run) > 0){
                     ?>

@@ -80,6 +80,12 @@
             padding-top: 10px;
        }
 
+       button{
+
+            margin-left:100%;
+
+       }
+
        table{
             width: 100%;
             border: 2px solid;        

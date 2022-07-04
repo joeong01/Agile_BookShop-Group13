@@ -117,7 +117,7 @@
 
         mysqli_query($con, $deleteitem);
 
-        //exit out to stock level
+        //exit out to cart
         header("Location:http://127.0.0.1:8000/cart");
         exit();
     }

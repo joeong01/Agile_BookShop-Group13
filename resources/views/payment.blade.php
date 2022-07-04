@@ -109,7 +109,8 @@
                     }
 
                     $epdate = $_GET['epdate'];
-                    
+                    //checking for expiriry date
+                    //make sure that expiriry date is not empty
                     if(empty($epdate)){
                         $valid = false;
             ?>

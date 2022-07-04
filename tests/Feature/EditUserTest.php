@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class RegisterTest extends TestCase
+class EditUserTest extends TestCase
 {
     /**
      * A basic feature test example.
@@ -15,7 +15,7 @@ class RegisterTest extends TestCase
      */
     public function test_example()
     {
-        $response = $this->get('/register');
+        $response = $this->get('/');
 
         $response->assertStatus(200);
     }

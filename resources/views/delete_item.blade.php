@@ -107,8 +107,8 @@
 
 <?php
     //load if the id is not empty
-    if (isset($_GET['ISBN_13'])) {
-        $isbn = $_GET['ISBN_13'];
+    if (isset($_GET['id'])) {
+        $isbn = $_GET['id'];
 
         $con = mysqli_connect("localhost", "root", "", "bookstore");
 
@@ -117,7 +117,7 @@
 
         mysqli_query($con, $deleteitem);
 
-        //exit out to stock level
+        //exit out to cart
         header("Location:http://127.0.0.1:8000/cart");
         exit();
     }

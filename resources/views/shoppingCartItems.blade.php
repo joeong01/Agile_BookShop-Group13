@@ -115,7 +115,14 @@
             $quantity=1;
             $subtotal=0;
 
-    $products = "SELECT book.bookName, category.categoryName, book.retailPrice FROM book JOIN category ON category.categoryID = book.bookCategory ";
+            //Get current session ID
+            $id = session()->get('id') ;
+
+            //Check cartID is linked with userID
+            $cartID = mysqli_query($con, "SELECT cartID FROM shoppingcart WHERE userID = $id");
+
+            //Get book details from book database
+            $products = "SELECT shoppingcartdetails.ISBN_13, book.bookName, book.retailPrice FROM shoppingcartdetails JOIN book ON shoppingcartdetails.ISBN_13 = book.ISBN_13 AND shoppingcartdetails.cartID = $cartID";
                     $products_run = mysqli_query($con, $products);
                     if(mysqli_num_rows($products_run) > 0){
                     ?>
@@ -123,7 +130,6 @@
                             <tr>
                                 <th>ISBN_13</th>
                                 <th>Book Name</th>
-                                <th>Category</th>
                                 <th>Quantity</th>
                                 <th>Price</th>
                             </tr>
@@ -134,7 +140,6 @@
                                 <tr>
                                     <th>{{ $proditems['ISBN_13']; }}</th>
                                     <th>{{ $proditems['bookName'] }}</th>
-                                    <th>{{ $proditems['categoryName'] }}</th>
                                     <th><button type = "button" name = "minus" class ="button">-</button>{{ $quantity }}<button type = "button" name= "plus" class = "button">+</button></th>
                                     <th>RM{{ $proditems['retailPrice']}}</th>
                             </tr>
@@ -154,7 +159,6 @@
 
                         
                         <button type = "button" name = "purchase" class = "button" ><a href={{ route('payment') }}>Purchase</a></button>
-
     </form>
 </div>
 </body>

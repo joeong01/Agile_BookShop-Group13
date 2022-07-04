@@ -82,7 +82,7 @@
 
        button{
 
-            margin-left:100%;
+            margin-left:90%;
 
        }
 

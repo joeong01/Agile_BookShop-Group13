@@ -153,7 +153,7 @@
                         ?>
 
                         
-                        <button type = "button" name = "purchase" class = "button">Purchase</button>
+                        <button type = "button" name = "purchase" class = "button" ><a href={{ route('payment') }}>Purchase</a></button>
 
     </form>
 </div>

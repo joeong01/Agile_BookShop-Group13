@@ -20,7 +20,7 @@ class ExampleTest extends DuskTestCase
                     ->assertSee('Payment')
                     ->type('cname', 'Name')
                     ->type('cardNum', '1234567890123456')
-                    ->type('ccv', '345')
+                    ->type('cvv', '345')
                     ->radio('cardType', 'visa')
                     ->type('epdate','12/12')
                     ->press('submit')

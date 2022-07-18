@@ -27,6 +27,16 @@
             min-height: 100vh;
         }
 
+        #add_stock{
+            background-color: rgb(173, 173, 173);
+            color: white;
+            padding: 14px 25px;
+            margin-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
         table {
             width: 100%;
             border: 2px solid;
@@ -113,6 +123,8 @@
                         <input type="radio" name="type" <?php if (!empty($_GET['type']) && $_GET['type'] == "stock.stockLevel DESC") {
                                                             echo "checked";
                                                         } ?> value="stock.stockLevel DESC"> Descending
+
+                        <br><a id="add_stock" href={{ route('add_book') }}>Add Stock</a>
 
                     </div>
                 </div>

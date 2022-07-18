@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\AddBookController;
 use App\Http\Controllers\AdminHomeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\UserHomeController;
@@ -65,3 +66,5 @@ Route::get('/transaction', TransactionController::class)->name('transaction');
 Route::get('/paymentHistory', PaymentHistoryController::class)->name('paymentHistory');
 
 Route::get('/payment', PaymentController::class)->name('payment');
+
+Route::get('/add_book', AddBookController::class)->name('add_book');
